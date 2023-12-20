@@ -30,15 +30,12 @@ int main(){
     startButton = al_load_bitmap(START_BUTTON_FILE);
 
     Board board = {0};
-    int startButtonWidth = al_get_bitmap_width(startButton);
-    int startButtonHeight = al_get_bitmap_height(startButton);
-    int startButtonX = (SCREEN_WIDTH - startButtonWidth) / 2;
-    int startButtonY = (SCREEN_HEIGHT - startButtonHeight) / 2;
+    StartButtonValue startButtonValue;
     int game = 1;
     bool moved = false;
     
     // Start Game
-    menu(startButton, menuBackground, Mstate, display, menuFont, startButtonWidth, startButtonHeight, startButtonX, startButtonY);
+    menu(&startButtonValue, startButton, menuBackground, Mstate, display, menuFont);
     srand(time(NULL));
     while(game == 1){
         initializeGame(&board);
