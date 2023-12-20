@@ -29,10 +29,16 @@ typedef struct{
     int score;
 } Board;
 
+typedef struct{
+    int startButtonWidth;
+    int startButtonHeight;
+    int startButtonX;
+    int startButtonY;
+} StartButtonValue;
 
-void menu(ALLEGRO_BITMAP  *startButton,  ALLEGRO_BITMAP  *menuBackground, ALLEGRO_MOUSE_STATE Mstate, ALLEGRO_DISPLAY *display, ALLEGRO_FONT *menuFont, int button_width, int button_height, int button_X, int button_Y);
-void drawTile(ALLEGRO_FONT *gameFont, int value, int row, int col);
+void menu(StartButtonValue * startButtonValue, ALLEGRO_BITMAP  *startButton,  ALLEGRO_BITMAP  *menuBackground, ALLEGRO_MOUSE_STATE Mstate, ALLEGRO_DISPLAY *display, ALLEGRO_FONT *menuFont);
 void drawGame(Board *board, ALLEGRO_FONT *gameFont, ALLEGRO_BITMAP  *gameBackground, ALLEGRO_DISPLAY *display);
+void drawTile(ALLEGRO_FONT *gameFont, int value, int row, int col);
 void generateNewTile(Board *board);
 void initializeGame(Board *board);
 void uninstallMenu(ALLEGRO_BITMAP  *menuBackground, ALLEGRO_BITMAP  *startButton, ALLEGRO_FONT *font);
