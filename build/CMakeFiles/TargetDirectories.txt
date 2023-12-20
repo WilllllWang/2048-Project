@@ -1,0 +1,3 @@
+C:/Users/Wilson/OneDrive/Documents/GitHub/2048-Project/build/CMakeFiles/2048.dir
+C:/Users/Wilson/OneDrive/Documents/GitHub/2048-Project/build/CMakeFiles/edit_cache.dir
+C:/Users/Wilson/OneDrive/Documents/GitHub/2048-Project/build/CMakeFiles/rebuild_cache.dir
