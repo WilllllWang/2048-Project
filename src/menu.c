@@ -6,7 +6,6 @@ void menu(StartButtonValue * startButtonValue, ALLEGRO_BITMAP  *startButton,  AL
     startButtonValue->startButtonX = (SCREEN_WIDTH - startButtonValue->startButtonWidth) / 2;
     startButtonValue->startButtonY = (SCREEN_HEIGHT - startButtonValue->startButtonHeight) / 2;
     while(1){
-        
         float mouseX = al_get_mouse_state_axis(&Mstate, 0);
         float mouseY = al_get_mouse_state_axis(&Mstate, 1);
         al_get_mouse_state(&Mstate);
