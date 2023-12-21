@@ -1,0 +1,4 @@
+1. Add end game screen
+2. Add audio
+3. Create 8x8 unlimited game mode
+4. Keep track of highest score
