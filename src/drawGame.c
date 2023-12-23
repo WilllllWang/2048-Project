@@ -1,10 +1,10 @@
 #include "myheader.h"
 
-void drawGame(Board *board, ALLEGRO_FONT *gameFont, ALLEGRO_BITMAP  *gameBackground, ALLEGRO_DISPLAY *display){
+void drawGame(Board *board, ALLEGRO_FONT *gameFont, ALLEGRO_BITMAP  *gameBackground, ALLEGRO_DISPLAY *display) {
     al_draw_bitmap(gameBackground, 0, 0, 0);
     al_draw_textf(gameFont, al_map_rgb(0, 0, 0), SCREEN_WIDTH / 2, (SCREEN_HEIGHT / 2) - 330, ALLEGRO_ALIGN_CENTRE, "Score: %d", board->score);
-    for (int row = 0; row < BOARD_SIZE; ++row){
-        for (int col = 0; col < BOARD_SIZE; ++col){
+    for (int row = 0; row < BOARD_SIZE; ++row) {
+        for (int col = 0; col < BOARD_SIZE; ++col) {
             drawTile(gameFont, board->grid[row][col].value, col*TILE_SIZE, row*TILE_SIZE);
         }
     }
@@ -12,11 +12,11 @@ void drawGame(Board *board, ALLEGRO_FONT *gameFont, ALLEGRO_BITMAP  *gameBackgro
 }
 
 
-void drawTile(ALLEGRO_FONT *gameFont, int value, int row, int col){
+void drawTile(ALLEGRO_FONT *gameFont, int value, int row, int col) {
     ALLEGRO_COLOR color;
     ALLEGRO_COLOR textColor = al_map_rgb(0, 0, 0);
 
-    switch (value){
+    switch (value) {
         case 0:
             color = al_map_rgb(204, 192, 179); 
             break;
@@ -57,7 +57,7 @@ void drawTile(ALLEGRO_FONT *gameFont, int value, int row, int col){
 
     al_draw_filled_rectangle(row+166, col+239, row+TILE_SIZE+166, col+TILE_SIZE+239, color);
 
-    if (value != 0){
+    if (value != 0) {
         al_draw_textf(gameFont, textColor, row+(TILE_SIZE/2)+166, col+(TILE_SIZE/2)+200, ALLEGRO_ALIGN_CENTER, "%d", value);
     }
 }
