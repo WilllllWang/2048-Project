@@ -20,16 +20,16 @@
 #define MENU_FONT "fonts/menu_font.ttf"
 #define GAME_FONT "fonts/game_font.ttf"
 
-typedef struct{
+typedef struct {
     int value;
 } Tile;
 
-typedef struct{
+typedef struct {
     Tile grid[BOARD_SIZE][BOARD_SIZE];
     int score;
 } Board;
 
-typedef struct{
+typedef struct {
     int startButtonWidth;
     int startButtonHeight;
     int startButtonX;

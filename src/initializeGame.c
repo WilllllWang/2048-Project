@@ -1,6 +1,6 @@
 #include "myheader.h"
 
-void initializeGame(Board *board){
+void initializeGame(Board *board) {
     board->score = 0;
     int row, col;
     for (row = 0; row < BOARD_SIZE; row++) {

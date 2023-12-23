@@ -37,41 +37,41 @@ int main(){
     // Start Game
     menu(startButton, menuBackground, Mstate, display, menuFont);
     srand(time(NULL));
-    while(game == 1){
+    while (game == 1) {
         initializeGame(&board);
         generateNewTile(&board);
         generateNewTile(&board);
         drawGame(&board, gameFont, gameBackground, display);
         game = 2;
 
-        while(game == 2){
+        while (game == 2) {
             al_get_keyboard_state(&KBstate);
-            if(al_key_down(&KBstate, ALLEGRO_KEY_UP)){
+            if (al_key_down(&KBstate, ALLEGRO_KEY_UP)) {
                 moved = moveTilesUp(&board);
             } 
-            else if(al_key_down(&KBstate, ALLEGRO_KEY_DOWN)){
+            else if (al_key_down(&KBstate, ALLEGRO_KEY_DOWN)) {
                 moved = moveTilesDown(&board);
                 
             }
-            else if(al_key_down(&KBstate, ALLEGRO_KEY_LEFT)){
+            else if (al_key_down(&KBstate, ALLEGRO_KEY_LEFT)) {
                 moved = moveTilesLeft(&board);
             }
-            else if(al_key_down(&KBstate, ALLEGRO_KEY_RIGHT)){
+            else if (al_key_down(&KBstate, ALLEGRO_KEY_RIGHT)) {
                 moved = moveTilesRight(&board);
             }
-            else if(al_key_down(&KBstate, ALLEGRO_KEY_ESCAPE)){
+            else if (al_key_down(&KBstate, ALLEGRO_KEY_ESCAPE)) {
                 game = 0;
             }       
             
             drawGame(&board, gameFont, gameBackground, display);
 
-            if(moved){
+            if (moved) {
                 al_rest(RENDERING_SPEED);
                 generateNewTile(&board);
                 
                 moved = false;
 
-                if(checkLoseCondition(&board) || checkWinCondition(&board)){
+                if (checkLoseCondition(&board) || checkWinCondition(&board)) {
                     game = 1;
                 }
             }
