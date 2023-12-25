@@ -4,6 +4,7 @@
 #include <time.h>
 #include "myheader.h"
 
+
 int main(){
     al_init();
     al_init_primitives_addon();
@@ -12,8 +13,7 @@ int main(){
     al_init_font_addon();
     al_install_mouse();
     al_install_keyboard();
-    
-    
+
     ALLEGRO_DISPLAY *display = NULL;
     ALLEGRO_FONT *menuFont = NULL;
     ALLEGRO_FONT *gameFont = NULL;
