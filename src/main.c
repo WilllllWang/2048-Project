@@ -13,6 +13,7 @@ int main(){
     al_install_mouse();
     al_install_keyboard();
     
+    
     ALLEGRO_DISPLAY *display = NULL;
     ALLEGRO_FONT *menuFont = NULL;
     ALLEGRO_FONT *gameFont = NULL;
