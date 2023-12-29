@@ -17,8 +17,12 @@
 #define MENU_BACKGROUND "images/menu_background.png"
 #define GAME_BACKGROUND "images/game_background.jpg"
 #define START_BUTTON_FILE "images/button.png"
+#define Quit_BUTTON_FILE "images/quit.png"
+#define Restart_BUTTON_FILE "images/restart.png"
 #define MENU_FONT "fonts/menu_font.ttf"
+#define End_FONT "fonts/menu_font.ttf"
 #define GAME_FONT "fonts/game_font.ttf"
+
 
 typedef struct {
     int value;
@@ -36,12 +40,14 @@ typedef struct {
     int startButtonY;
 } StartButtonValue;
 
+void endMenu(ALLEGRO_BITMAP  *menuBackground,ALLEGRO_BITMAP  *startButton, ALLEGRO_BITMAP  *gameBackground, ALLEGRO_BITMAP  *quitButton,  ALLEGRO_BITMAP  *restartButton, ALLEGRO_MOUSE_STATE Mstate, ALLEGRO_DISPLAY *display, ALLEGRO_FONT *menuFont, ALLEGRO_FONT *endFont);
 void menu(ALLEGRO_BITMAP  *startButton,  ALLEGRO_BITMAP  *menuBackground, ALLEGRO_MOUSE_STATE Mstate, ALLEGRO_DISPLAY *display, ALLEGRO_FONT *menuFont);
 void drawGame(Board *board, ALLEGRO_FONT *gameFont, ALLEGRO_BITMAP  *gameBackground, ALLEGRO_DISPLAY *display);
 void drawTile(ALLEGRO_FONT *gameFont, int value, int row, int col);
 void generateNewTile(Board *board);
 void initializeGame(Board *board);
 void uninstallMenu(ALLEGRO_BITMAP  *menuBackground, ALLEGRO_BITMAP  *startButton, ALLEGRO_FONT *font);
+void uninstallEnd(ALLEGRO_BITMAP  *quitButton,  ALLEGRO_BITMAP  *restartButton, ALLEGRO_BITMAP  *gameBackground, ALLEGRO_MOUSE_STATE Mstate, ALLEGRO_DISPLAY *display, ALLEGRO_FONT *endFont, ALLEGRO_FONT *menuFont);
 void uninstallGame(ALLEGRO_BITMAP  *gameBackground, ALLEGRO_DISPLAY *display, ALLEGRO_FONT *gameFont);
 bool boardFull(Board *board);
 bool moveTilesUp(Board *board);

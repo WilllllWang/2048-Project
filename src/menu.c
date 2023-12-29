@@ -1,6 +1,6 @@
 #include "myheader.h"
 
-void menu(ALLEGRO_BITMAP  *startButton,  ALLEGRO_BITMAP  *menuBackground, ALLEGRO_MOUSE_STATE Mstate, ALLEGRO_DISPLAY *display, ALLEGRO_FONT *menuFont) {
+void menu(ALLEGRO_BITMAP  *startButton,  ALLEGRO_BITMAP  *menuBackground,  ALLEGRO_MOUSE_STATE Mstate, ALLEGRO_DISPLAY *display, ALLEGRO_FONT *menuFont) {
     StartButtonValue startButtonValue;
     startButtonValue.startButtonWidth = al_get_bitmap_width(startButton);
     startButtonValue.startButtonHeight = al_get_bitmap_height(startButton);
@@ -33,5 +33,6 @@ void menu(ALLEGRO_BITMAP  *startButton,  ALLEGRO_BITMAP  *menuBackground, ALLEGR
         }
     }   
 }
+
 
 
