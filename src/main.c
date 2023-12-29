@@ -37,13 +37,12 @@ int main(){
     restartButton = al_load_bitmap(Restart_BUTTON_FILE);
 
     Board board = {0};
-    int game = 1;
     bool moved = false;
     bool again = true;
     // Start Game
-    //while (again){
-    //endMenu(menuBackground, startButton, gameBackground, quitButton, restartButton, Mstate, display, endFont, menuFont);
+    while (again){
     menu(startButton, menuBackground, Mstate, display, menuFont);
+    int game = 1;
     srand(time(NULL));
     while (game == 1) {
         initializeGame(&board);
@@ -77,15 +76,13 @@ int main(){
                 generateNewTile(&board);
                 moved = false;
                 while(checkLoseCondition(&board)){
-                game = 0;   
+                game = 0;
+                again = 1;
+                break;   
                 }
             }
             al_rest(0.1);
         }
     }
-    
     endMenu(menuBackground, startButton, gameBackground, quitButton, restartButton, Mstate, display, endFont, menuFont);
-}
-
-
-
+}}

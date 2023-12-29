@@ -78,9 +78,9 @@ void endMenu(ALLEGRO_BITMAP  *menuBackground,ALLEGRO_BITMAP  *startButton, ALLEG
             uninstallEnd(gameBackground, quitButton, restartButton, Mstate, display, endFont, menuFont);
             break;}
         if (al_mouse_button_down(&Mstate, 1) && (mouseX >= restartButtonValue.startButtonX && mouseX <= (restartButtonValue.startButtonX+restartButtonValue.startButtonWidth)&&(mouseY >= quitButtonValue.startButtonY && mouseY <= (quitButtonValue.startButtonY + quitButtonValue.startButtonHeight)))) {
-            al_rest(RENDERING_SPEED);
-            menu(startButton, menuBackground, Mstate, display, menuFont);
+            al_rest(0.25);
             break;
         }
-    }   
-}    
+    }}   
+
+  
