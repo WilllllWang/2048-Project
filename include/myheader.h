@@ -20,7 +20,7 @@
 #define Quit_BUTTON_FILE "images/quit.png"
 #define Restart_BUTTON_FILE "images/restart.png"
 #define MENU_FONT "fonts/menu_font.ttf"
-#define End_FONT "fonts/menu_font.ttf"
+#define END_FONT "fonts/menu_font.ttf"
 #define GAME_FONT "fonts/game_font.ttf"
 
 
