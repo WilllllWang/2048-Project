@@ -1,6 +1,6 @@
 #include "myheader.h"
 
-bool moveTilesUp(Board *board){
+bool moveTilesUp(Board *board) {
     int row, col, row_above;
     bool moved = false;
     for(row = 1; row < BOARD_SIZE; row++){
@@ -31,7 +31,7 @@ bool moveTilesUp(Board *board){
 }
 
 
-bool moveTilesDown(Board *board){
+bool moveTilesDown(Board *board) {
     int row, col, row_below;
     bool moved = false;
     for(row = BOARD_SIZE-2; row >= 0; row--){
@@ -63,7 +63,7 @@ bool moveTilesDown(Board *board){
 }
 
 
-bool moveTilesLeft(Board *board){
+bool moveTilesLeft(Board *board) {
     int row, col, col_left;
     bool moved = false;
     for(row = 0; row < BOARD_SIZE; row++){
@@ -95,7 +95,7 @@ bool moveTilesLeft(Board *board){
 }
 
 
-bool moveTilesRight(Board *board){
+bool moveTilesRight(Board *board) {
     int row, col, col_right;
     bool moved = false;
     for(row = 0; row < BOARD_SIZE; row++){
