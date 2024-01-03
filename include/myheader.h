@@ -23,7 +23,6 @@
 #define END_FONT "fonts/menu_font.ttf"
 #define GAME_FONT "fonts/game_font.ttf"
 
-
 typedef struct {
     int value;
 } Tile;
@@ -34,14 +33,20 @@ typedef struct {
 } Board;
 
 typedef struct {
-    int startButtonWidth;
-    int startButtonHeight;
-    int startButtonX;
-    int startButtonY;
-} StartButtonValue;
+    int ButtonWidth;
+    int ButtonHeight;
+    int ButtonX;
+    int ButtonY;
+} ButtonValue;
 
-void endMenu(ALLEGRO_BITMAP  *menuBackground,ALLEGRO_BITMAP  *startButton, ALLEGRO_BITMAP  *gameBackground, ALLEGRO_BITMAP  *quitButton,  ALLEGRO_BITMAP  *restartButton, ALLEGRO_MOUSE_STATE Mstate, ALLEGRO_DISPLAY *display, ALLEGRO_FONT *menuFont, ALLEGRO_FONT *endFont);
-void menu(ALLEGRO_BITMAP  *startButton,  ALLEGRO_BITMAP  *menuBackground, ALLEGRO_MOUSE_STATE Mstate, ALLEGRO_DISPLAY *display, ALLEGRO_FONT *font);
+typedef struct {
+    int gameCondition;
+} Condition;
+
+
+
+void menu(ALLEGRO_BITMAP  *startButton,  ALLEGRO_BITMAP  *menuBackground, ALLEGRO_MOUSE_STATE Mstate, ALLEGRO_DISPLAY *display, ALLEGRO_FONT *font, Condition *condition);
+void endMenu(ALLEGRO_BITMAP  *menuBackground, ALLEGRO_BITMAP  *gameBackground, ALLEGRO_BITMAP  *quitButton,  ALLEGRO_BITMAP  *restartButton, ALLEGRO_MOUSE_STATE Mstate, ALLEGRO_DISPLAY *display, ALLEGRO_FONT *menuFont, ALLEGRO_FONT *endFont, Condition *condition);
 void drawGame(Board *board, ALLEGRO_FONT *gameFont, ALLEGRO_BITMAP  *gameBackground, ALLEGRO_DISPLAY *display);
 void drawTile(ALLEGRO_FONT *gameFont, int value, int row, int col);
 void generateNewTile(Board *board);
@@ -54,7 +59,7 @@ bool moveTilesUp(Board *board);
 bool moveTilesDown(Board *board);
 bool moveTilesLeft(Board *board);
 bool moveTilesRight(Board *board);
-bool checkLoseCondition(Board *board);
-bool checkWinCondition(Board *board);
+bool checkLoseCondition(Board *board, Condition *condition);
+bool checkWinCondition(Board *board, Condition *condition);
 
 #endif 
