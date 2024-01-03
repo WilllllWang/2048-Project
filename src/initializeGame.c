@@ -9,4 +9,3 @@ void initializeGame(Board *board) {
         }
     }
 }
-

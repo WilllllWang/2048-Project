@@ -96,4 +96,3 @@ void endMenu(ALLEGRO_BITMAP  *menuBackground, ALLEGRO_BITMAP  *gameBackground, A
         }
     }
 }   
-
