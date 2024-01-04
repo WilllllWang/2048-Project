@@ -40,7 +40,6 @@ int main(){
     Condition condition;
     int game = 1;
     bool moved = false;
-    bool again = true;
     // Start Game
     while (game == 1) {
         menu(startButton, menuBackground, Mstate, display, menuFont);
@@ -59,7 +58,6 @@ int main(){
                 } 
                 else if (al_key_down(&KBstate, ALLEGRO_KEY_DOWN)) {
                     moved = moveTilesDown(&board);
-
                 }
                 else if (al_key_down(&KBstate, ALLEGRO_KEY_LEFT)) {
                     moved = moveTilesLeft(&board);
@@ -78,11 +76,7 @@ int main(){
                     generateNewTile(&board);
                     moved = false;
 
-                    if (checkLoseCondition(&board, &condition)) {
-                        al_rest(RENDERING_SPEED);
-                        game = 1;
-                    }
-                    else if (checkWinCondition(&board, &condition)) {
+                    if (checkLoseCondition(&board, &condition) || checkWinCondition(&board, &condition)) {
                         al_rest(RENDERING_SPEED);
                         game = 1;
                     }

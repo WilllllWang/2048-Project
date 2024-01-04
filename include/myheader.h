@@ -39,10 +39,10 @@ typedef struct {
     int ButtonY;
 } ButtonValue;
 
+
 typedef struct {
     int gameCondition;
 } Condition;
-
 
 
 void menu(ALLEGRO_BITMAP  *startButton,  ALLEGRO_BITMAP  *menuBackground, ALLEGRO_MOUSE_STATE Mstate, ALLEGRO_DISPLAY *display, ALLEGRO_FONT *font);
