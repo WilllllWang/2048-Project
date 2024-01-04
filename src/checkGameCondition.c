@@ -36,4 +36,12 @@ bool checkWinCondition(Board *board, Condition *condition) {
 }
 
 
+    
+    
+
+
+
+
+
+
   

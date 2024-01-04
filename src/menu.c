@@ -35,7 +35,7 @@ void menu(ALLEGRO_BITMAP  *startButton,  ALLEGRO_BITMAP  *menuBackground,  ALLEG
 }
 
 
-void endMenu(ALLEGRO_BITMAP  *menuBackground, ALLEGRO_BITMAP  *gameBackground, ALLEGRO_BITMAP  *quitButton,  ALLEGRO_BITMAP  *restartButton, ALLEGRO_MOUSE_STATE Mstate, ALLEGRO_DISPLAY *display, ALLEGRO_FONT *endFont, ALLEGRO_FONT *menuFont, Condition *condition) {
+void endMenu(ALLEGRO_BITMAP  *menuBackground, ALLEGRO_BITMAP  *gameBackground, ALLEGRO_BITMAP  *quitButton,  ALLEGRO_BITMAP  *restartButton, ALLEGRO_MOUSE_STATE Mstate, ALLEGRO_DISPLAY *display, ALLEGRO_FONT *endFont, ALLEGRO_FONT *menuFont, Condition *condition, Blank *blank) {
     ButtonValue restartButtonValue;
     restartButtonValue.ButtonWidth = al_get_bitmap_width(restartButton);
     restartButtonValue.ButtonHeight = al_get_bitmap_height(restartButton);
