@@ -43,11 +43,11 @@ int main(){
     bool again = true;
     // Start Game
     while (game == 1) {
-        menu(startButton, menuBackground, Mstate, display, menuFont, &condition);
+        menu(startButton, menuBackground, Mstate, display, menuFont);
         srand(time(NULL));
         game = 2; // Initialize game 
         while (game == 2) {
-            initializeGame(&board);
+            initializeGame(&board, &condition);
             generateNewTile(&board);
             generateNewTile(&board);
             drawGame(&board, gameFont, gameBackground, display);
