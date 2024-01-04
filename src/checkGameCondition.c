@@ -27,11 +27,12 @@ bool checkWinCondition(Board *board, Condition *condition) {
     for (int row = 0; row < BOARD_SIZE; row++) {
         for (int col = 0; col < BOARD_SIZE; col++) {
             if (board->grid[row][col].value == WINNING_TILE) {
+                condition->gameCondition = 2;
                 return true;
             }
         }
     }
-    condition->gameCondition = 2;
+    
     return false;
 }
 
