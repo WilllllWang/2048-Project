@@ -9,7 +9,7 @@ void drawGame(Board *board, ALLEGRO_FONT *gameFont, ALLEGRO_BITMAP  *gameBackgro
         }
     }
     al_flip_display();
-}
+}//分別繪製遊戲背景、分數、及4x4的板子
 
 
 void drawTile(ALLEGRO_FONT *gameFont, int value, int row, int col) {
@@ -53,11 +53,11 @@ void drawTile(ALLEGRO_FONT *gameFont, int value, int row, int col) {
         case 2048:
             color = al_map_rgb(237, 194, 46); 
             break;
-    }
+    }//繪製方格，並設定不同的數值方格有著不同的顏色背景
 
     al_draw_filled_rectangle(row+166, col+239, row+TILE_SIZE+166, col+TILE_SIZE+239, color);
 
     if (value != 0) {
         al_draw_textf(gameFont, textColor, row+(TILE_SIZE/2)+166, col+(TILE_SIZE/2)+200, ALLEGRO_ALIGN_CENTER, "%d", value);
     }
-}
+}//繪製非零數值的方塊

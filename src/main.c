@@ -53,7 +53,7 @@ int main(){
             drawGame(&board, gameFont, gameBackground, display);
             game = 3; // Start game 
             while (game == 3) {
-                al_get_keyboard_state(&KBstate);
+                al_get_keyboard_state(&KBstate);//取得鍵盤狀態
                 if (al_key_down(&KBstate, ALLEGRO_KEY_UP)) {
                     moved = moveTilesUp(&board);
                 } 
@@ -68,7 +68,7 @@ int main(){
                     moved = moveTilesRight(&board);
                 }
                 else if (al_key_down(&KBstate, ALLEGRO_KEY_ESCAPE)) {
-                    game = 1;
+                    game = 1;//按下ESC鍵，結束當前遊戲
                 }       
                 
                 drawGame(&board, gameFont, gameBackground, display);

@@ -84,17 +84,17 @@ void endMenu(ALLEGRO_BITMAP  *menuBackground, ALLEGRO_BITMAP  *gameBackground, A
             al_draw_text(endFont, al_map_rgb(220, 110, 90), SCREEN_WIDTH-280, quitButtonValue.ButtonY+30, ALLEGRO_ALIGN_CENTER, "QUIT");
             al_draw_text(endFont, al_map_rgb(220, 110, 90), SCREEN_WIDTH/3-35, restartButtonValue.ButtonY+35, ALLEGRO_ALIGN_CENTER, "MENU");
             mouseOnButton = false;
-        }
+        }//判斷滑鼠位置在quit或restart，做出相對應的處理
         al_flip_display();
 
         if (al_mouse_button_down(&Mstate, 1) && (mouseX >= quitButtonValue.ButtonX && mouseX <= (quitButtonValue.ButtonX+quitButtonValue.ButtonWidth)) && (mouseY >= quitButtonValue.ButtonY && mouseY <= (quitButtonValue.ButtonY + quitButtonValue.ButtonHeight))) {
             al_rest(RENDERING_SPEED);
             uninstallEnd(gameBackground, quitButton, restartButton, Mstate, display, endFont, menuFont);
-            break;
+            break;//如果滑鼠左鍵按下quit button，則退出並卸載遊戲
         }
         if (al_mouse_button_down(&Mstate, 1) && (mouseX >= restartButtonValue.ButtonX && mouseX <= (restartButtonValue.ButtonX+restartButtonValue.ButtonWidth) && (mouseY >= quitButtonValue.ButtonY && mouseY <= (quitButtonValue.ButtonY + quitButtonValue.ButtonHeight)))) {
             al_rest(RENDERING_SPEED);
-            break;
+            break;//如果滑鼠左鍵按下restart button，則等待一段時間
         }
     }
 }   
