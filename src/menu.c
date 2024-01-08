@@ -1,7 +1,5 @@
 #include "myheader.h"
 
-
-
 void menu(ALLEGRO_BITMAP  *startButton,  ALLEGRO_BITMAP  *menuBackground,  ALLEGRO_MOUSE_STATE Mstate, ALLEGRO_DISPLAY *display, ALLEGRO_FONT *font, Condition *condition) {
     ButtonValue startButtonValue;
     startButtonValue.ButtonWidth = al_get_bitmap_width(startButton);
@@ -22,7 +20,7 @@ void menu(ALLEGRO_BITMAP  *startButton,  ALLEGRO_BITMAP  *menuBackground,  ALLEG
         if ((mouseX >= startButtonValue.ButtonX && mouseX <= (startButtonValue.ButtonX+startButtonValue.ButtonWidth)) && (mouseY >= startButtonValue.ButtonY && mouseY <= (startButtonValue.ButtonY+startButtonValue.ButtonHeight))) {
             al_draw_text(font, al_map_rgb(255, 255, 255), SCREEN_WIDTH/2, startButtonValue.ButtonY+15, ALLEGRO_ALIGN_CENTER, "PLAY"); 
             mouseOnButton = true;
-        }
+        }//當滑鼠位於PLAY按鈕的區域內時，文字的顏色會變成白色
         else {
             al_draw_text(font, al_map_rgb(220, 110, 90), SCREEN_WIDTH/2, startButtonValue.ButtonY+15, ALLEGRO_ALIGN_CENTER, "PLAY");
             mouseOnButton = false;
@@ -37,7 +35,7 @@ void menu(ALLEGRO_BITMAP  *startButton,  ALLEGRO_BITMAP  *menuBackground,  ALLEG
 }
 
 
-void endMenu(ALLEGRO_BITMAP  *menuBackground, ALLEGRO_BITMAP  *gameBackground, ALLEGRO_BITMAP  *quitButton,  ALLEGRO_BITMAP  *restartButton, ALLEGRO_MOUSE_STATE Mstate, ALLEGRO_DISPLAY *display, ALLEGRO_FONT *endFont, ALLEGRO_FONT *menuFont, Condition *condition) {
+void endMenu(ALLEGRO_BITMAP  *menuBackground, ALLEGRO_BITMAP  *gameBackground, ALLEGRO_BITMAP  *quitButton,  ALLEGRO_BITMAP  *restartButton, ALLEGRO_MOUSE_STATE Mstate, ALLEGRO_DISPLAY *display, ALLEGRO_FONT *endFont, ALLEGRO_FONT *menuFont, Condition *condition, Blank *blank) {
     ButtonValue restartButtonValue;
     restartButtonValue.ButtonWidth = al_get_bitmap_width(restartButton);
     restartButtonValue.ButtonHeight = al_get_bitmap_height(restartButton);

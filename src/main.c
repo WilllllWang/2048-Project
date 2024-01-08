@@ -16,6 +16,7 @@ int main(){
 
     ALLEGRO_DISPLAY *display = NULL;
     ALLEGRO_FONT *menuFont = NULL;
+    ALLEGRO_FONT *countFont = NULL;
     ALLEGRO_FONT *gameFont = NULL;
     ALLEGRO_FONT *endFont = NULL;
     ALLEGRO_BITMAP  *menuBackground = NULL;
@@ -29,6 +30,7 @@ int main(){
     display = al_create_display(SCREEN_WIDTH, SCREEN_HEIGHT);
     menuFont = al_load_ttf_font(MENU_FONT, 120, 0);
     gameFont = al_load_ttf_font(GAME_FONT, 60, 0);
+    countFont = al_load_ttf_font(END_FONT, 30, 0);
     endFont = al_load_ttf_font(END_FONT, 60, 0);
     menuBackground = al_load_bitmap(MENU_BACKGROUND); 
     gameBackground = al_load_bitmap(GAME_BACKGROUND); 
@@ -37,6 +39,7 @@ int main(){
     restartButton = al_load_bitmap(Restart_BUTTON_FILE);
 
     Board board = {0};
+    Blank blank = {0};
     Condition condition;
     int game = 1;
     bool moved = false;
@@ -50,28 +53,29 @@ int main(){
             initializeGame(&board);
             generateNewTile(&board);
             generateNewTile(&board);
-            drawGame(&board, gameFont, gameBackground, display);
+            drawGame(&board, &blank, gameFont, gameBackground, display, countFont);
             game = 3; // Start game 
             while (game == 3) {
                 al_get_keyboard_state(&KBstate);//取得鍵盤狀態
                 if (al_key_down(&KBstate, ALLEGRO_KEY_UP)) {
-                    moved = moveTilesUp(&board);
+                    moved = moveTilesUp(&board, &blank);
                 } 
                 else if (al_key_down(&KBstate, ALLEGRO_KEY_DOWN)) {
-                    moved = moveTilesDown(&board);
+                    moved = moveTilesDown(&board, &blank);
 
                 }
                 else if (al_key_down(&KBstate, ALLEGRO_KEY_LEFT)) {
-                    moved = moveTilesLeft(&board);
+                    moved = moveTilesLeft(&board, &blank);
                 }
                 else if (al_key_down(&KBstate, ALLEGRO_KEY_RIGHT)) {
-                    moved = moveTilesRight(&board);
+                    moved = moveTilesRight(&board, &blank);
                 }
                 else if (al_key_down(&KBstate, ALLEGRO_KEY_ESCAPE)) {
                     game = 1;//按下ESC鍵，結束當前遊戲
+                    break;
                 }       
                 
-                drawGame(&board, gameFont, gameBackground, display);
+                drawGame(&board, &blank, gameFont, gameBackground, display, countFont);
 
                 if (moved) {
                     al_rest(RENDERING_SPEED);
@@ -90,6 +94,7 @@ int main(){
                 al_rest(RENDERING_SPEED);
             }
         }
-        endMenu(menuBackground, gameBackground, quitButton, restartButton, Mstate, display, endFont, menuFont, &condition);
+        endMenu( menuBackground, gameBackground, quitButton, restartButton, Mstate, display, endFont, menuFont, &condition, &blank);
+        clearCount(&blank);
     }
 }

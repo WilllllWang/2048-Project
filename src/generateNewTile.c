@@ -11,7 +11,7 @@ void generateNewTile(Board *board) {
         } 
 
         int newValue = (rand() % 10 == 0) ? 4 : 2;// 根據一定的機率，設定新方塊的數值為2或4
-        board->grid[row][col].value = newValue;// 在選定的位置上設定新方塊的數值     
+        board->grid[row][col].value = newValue; // 在選定的位置上設定新方塊的數值     
     }
 }
 
