@@ -23,6 +23,9 @@
 #define END_FONT "fonts/menu_font.ttf"
 #define GAME_FONT "fonts/game_font.ttf"
 #define COUNT_FONT "fonts/game_font.ttf"
+#define MOVE_SOUND_FILE "move_sound.wav"
+#define WIN_SOUND_FILE "win_sound.wav"
+#define LOSE_SOUND_FILE "lose_sound.wav"
 
 typedef struct {
     int value;

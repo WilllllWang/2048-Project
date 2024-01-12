@@ -15,27 +15,27 @@ bool moveTilesUp(Board *board, Blank *blank) {
                     } 
                     else if(board->grid[row_above][col].value == board->grid[row][col].value){// 如果上面的方塊數值和該方塊相同
                         switch(board->grid[row_above][col].value){
-                        case 2: blank->blank2 += board->grid[row_above][col].value; //顯示"2"的方塊有幾個
+                        case 2: blank->blank2 += board->grid[row_above][col].value; //顯示消掉"2"的方塊數量
                         break;
-                        case 4: blank->blank4 += board->grid[row_above][col].value/2;//顯示"4"的方塊有幾個
+                        case 4: blank->blank4 += board->grid[row_above][col].value/2;//顯示消掉"4"的方塊數量
                         break;
-                        case 8: blank->blank8 += board->grid[row_above][col].value/4;//顯示"8"的方塊有幾個
+                        case 8: blank->blank8 += board->grid[row_above][col].value/4;//顯示消掉"8"的方塊數量
                         break;
-                        case 16: blank->blank16 += board->grid[row_above][col].value/8;//顯示"16"的方塊有幾個
+                        case 16: blank->blank16 += board->grid[row_above][col].value/8;//顯示消掉"16"的方塊數量
                         break;
-                        case 32: blank->blank32 += board->grid[row_above][col].value/16;//顯示"32"的方塊有幾個
+                        case 32: blank->blank32 += board->grid[row_above][col].value/16;//顯示消掉"32"的方塊數量
                         break;
-                        case 64: blank->blank64 += board->grid[row_above][col].value/32;//顯示"64"的方塊有幾個
+                        case 64: blank->blank64 += board->grid[row_above][col].value/32;//顯示消掉"64"的方塊數量
                         break;
-                        case 128: blank->blank128 += board->grid[row_above][col].value/64;//顯示"128"的方塊有幾個
+                        case 128: blank->blank128 += board->grid[row_above][col].value/64;//顯示消掉"128"的方塊數量
                         break;
-                        case 256: blank->blank256 += board->grid[row_above][col].value/128;//顯示"256"的方塊有幾個
+                        case 256: blank->blank256 += board->grid[row_above][col].value/128;//顯示消掉"256"的方塊數量
                         break;
-                        case 512: blank->blank256 += board->grid[row_above][col].value/256;//顯示"512"的方塊有幾個
+                        case 512: blank->blank256 += board->grid[row_above][col].value/256;//顯示消掉"512"的方塊數量
                         break;
-                        case 1024: blank->blank1024 += board->grid[row_above][col].value/512;//顯示"1024"的方塊有幾個
+                        case 1024: blank->blank1024 += board->grid[row_above][col].value/512;//顯示消掉"1024"的方塊數量
                         break;
-                        case 2048: blank->blank2048 += board->grid[row_above][col].value/1024;//顯示"2048"的方塊有幾個
+                        case 2048: blank->blank2048 += board->grid[row_above][col].value/1024;//顯示消掉"2048"的方塊數量
                         break;
                         }
                         board->grid[row_above][col].value *= 2; //將合併之方塊值*2
