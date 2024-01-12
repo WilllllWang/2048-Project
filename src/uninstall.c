@@ -25,7 +25,14 @@ void uninstallEnd(ALLEGRO_BITMAP  *gameBackground, ALLEGRO_BITMAP  *quitButton, 
     al_destroy_font(endFont);
     al_destroy_font(menuFont);
     al_uninstall_mouse();
+
 }
+
+void uninstallMusic(ALLEGRO_SAMPLE *moveSound,ALLEGRO_SAMPLE *winSound,ALLEGRO_SAMPLE *loseSound){
+    al_destroy_sample(moveSound);
+    al_destroy_sample(winSound);
+    al_destroy_sample(loseSound);
+};
 
 void clearCount(Blank *blank){
     blank->blank2 = 0;

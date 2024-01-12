@@ -7,6 +7,8 @@
 #include <allegro5/allegro_primitives.h>
 #include <allegro5/allegro_image.h>
 #include <allegro5/allegro_ttf.h>
+#include <allegro5/allegro_acodec.h>
+#include <allegro5/allegro_audio.h>
 
 #define SCREEN_WIDTH 1000
 #define SCREEN_HEIGHT 1000
@@ -23,9 +25,9 @@
 #define END_FONT "fonts/menu_font.ttf"
 #define GAME_FONT "fonts/game_font.ttf"
 #define COUNT_FONT "fonts/game_font.ttf"
-#define MOVE_SOUND_FILE "move_sound.wav"
-#define WIN_SOUND_FILE "win_sound.wav"
-#define LOSE_SOUND_FILE "lose_sound.wav"
+#define MOVE_SOUND_FILE "audio/move_sound.wav"
+#define WIN_SOUND_FILE "audio/win_sound.wav"
+#define LOSE_SOUND_FILE "audio/lose_sound.wav"
 
 typedef struct {
     int value;
@@ -70,7 +72,8 @@ void drawTile(ALLEGRO_FONT *gameFont, int value, int row, int col);
 void generateNewTile(Board *board);
 void initializeGame(Board *board);
 void uninstallMenu(ALLEGRO_BITMAP  *menuBackground, ALLEGRO_BITMAP  *startButton, ALLEGRO_FONT *font);
-void uninstallEnd(ALLEGRO_BITMAP  *quitButton,  ALLEGRO_BITMAP  *restartButton, ALLEGRO_BITMAP  *gameBackground, ALLEGRO_MOUSE_STATE Mstate, ALLEGRO_DISPLAY *display, ALLEGRO_FONT *endFont, ALLEGRO_FONT *menuFont);
+void uninstallEnd(ALLEGRO_BITMAP  *gameBackground, ALLEGRO_BITMAP  *quitButton, ALLEGRO_BITMAP  *restartButton, ALLEGRO_MOUSE_STATE Mstate, ALLEGRO_DISPLAY *display, ALLEGRO_FONT *endFont, ALLEGRO_FONT *menuFont);
+void uninstallMusic(ALLEGRO_SAMPLE *moveSound,ALLEGRO_SAMPLE *winSound,ALLEGRO_SAMPLE *loseSound);
 void uninstallGame(ALLEGRO_BITMAP  *gameBackground, ALLEGRO_DISPLAY *display, ALLEGRO_FONT *gameFont);
 void clearCount(Blank *blank);
 bool boardFull(Board *board);

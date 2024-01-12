@@ -13,6 +13,9 @@ int main(){
     al_init_font_addon();
     al_install_mouse();
     al_install_keyboard();
+    al_install_audio();
+    al_init_acodec_addon();
+    al_reserve_samples(3);
 
     ALLEGRO_DISPLAY *display = NULL;
     ALLEGRO_FONT *menuFont = NULL;
@@ -26,6 +29,9 @@ int main(){
     ALLEGRO_BITMAP  *restartButton = NULL;
     ALLEGRO_MOUSE_STATE Mstate;
     ALLEGRO_KEYBOARD_STATE KBstate;
+    ALLEGRO_SAMPLE *moveSound = NULL;
+    ALLEGRO_SAMPLE *winSound = NULL;
+    ALLEGRO_SAMPLE *loseSound = NULL;
 
     display = al_create_display(SCREEN_WIDTH, SCREEN_HEIGHT);
     menuFont = al_load_ttf_font(MENU_FONT, 120, 0);
@@ -37,6 +43,14 @@ int main(){
     startButton = al_load_bitmap(START_BUTTON_FILE);
     quitButton = al_load_bitmap(Quit_BUTTON_FILE);
     restartButton = al_load_bitmap(Restart_BUTTON_FILE);
+    moveSound = al_load_sample(MOVE_SOUND_FILE);
+    winSound = al_load_sample(WIN_SOUND_FILE);
+    loseSound = al_load_sample(LOSE_SOUND_FILE); 
+
+    if (!moveSound || !winSound || !loseSound /* 檢查其他音效 */) {
+        fprintf(stderr, "Failed to load audio samples.\n");
+        return -1;
+    }
 
     Board board = {0};
     Blank blank = {0};
@@ -78,15 +92,18 @@ int main(){
                 drawGame(&board, &blank, gameFont, gameBackground, display, countFont);
 
                 if (moved) {
+                    al_play_sample(moveSound, 1.0, 0.0, 1.0, ALLEGRO_PLAYMODE_ONCE, NULL);
                     al_rest(RENDERING_SPEED);
                     generateNewTile(&board);
                     moved = false;
 
                     if (checkLoseCondition(&board, &condition)) {
+                        al_play_sample(loseSound, 1.0, 0.0, 1.0, ALLEGRO_PLAYMODE_ONCE, NULL);
                         al_rest(RENDERING_SPEED);
                         game = 1;
                     }
                     else if (checkWinCondition(&board, &condition)) {
+                        al_play_sample(winSound, 1.0, 0.0, 1.0, ALLEGRO_PLAYMODE_ONCE, NULL);
                         al_rest(RENDERING_SPEED);
                         game = 1;
                     }
