@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "myheader.h": "c"
+        "myheader.h": "c",
+        "ratio": "c"
     }
 }

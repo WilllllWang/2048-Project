@@ -11,7 +11,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/AllegroLib_5.2.8/lib/liballegro_acodec.dll.a"
+			"value" : "D:/AllegroLib_5.2.8/AllegroLib_5.2.8/lib/liballegro_acodec.dll.a"
 		},
 		{
 			"name" : "ALLEGRO_AUDIO_LIBRARY",
@@ -23,7 +23,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/AllegroLib_5.2.8/lib/liballegro_audio.dll.a"
+			"value" : "D:/AllegroLib_5.2.8/AllegroLib_5.2.8/lib/liballegro_audio.dll.a"
 		},
 		{
 			"name" : "ALLEGRO_DIALOG_LIBRARY",
@@ -35,7 +35,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/AllegroLib_5.2.8/lib/liballegro_dialog.dll.a"
+			"value" : "D:/AllegroLib_5.2.8/AllegroLib_5.2.8/lib/liballegro_dialog.dll.a"
 		},
 		{
 			"name" : "ALLEGRO_FONT_LIBRARY",
@@ -47,7 +47,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/AllegroLib_5.2.8/lib/liballegro_font.dll.a"
+			"value" : "D:/AllegroLib_5.2.8/AllegroLib_5.2.8/lib/liballegro_font.dll.a"
 		},
 		{
 			"name" : "ALLEGRO_IMAGE_LIBRARY",
@@ -59,7 +59,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/AllegroLib_5.2.8/lib/liballegro_image.dll.a"
+			"value" : "D:/AllegroLib_5.2.8/AllegroLib_5.2.8/lib/liballegro_image.dll.a"
 		},
 		{
 			"name" : "ALLEGRO_LIBRARY",
@@ -71,7 +71,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/AllegroLib_5.2.8/lib/liballegro.dll.a"
+			"value" : "D:/AllegroLib_5.2.8/AllegroLib_5.2.8/lib/liballegro.dll.a"
 		},
 		{
 			"name" : "ALLEGRO_PRIMITIVES_LIBRARY",
@@ -83,7 +83,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/AllegroLib_5.2.8/lib/liballegro_primitives.dll.a"
+			"value" : "D:/AllegroLib_5.2.8/AllegroLib_5.2.8/lib/liballegro_primitives.dll.a"
 		},
 		{
 			"name" : "ALLEGRO_TTF_LIBRARY",
@@ -95,7 +95,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/AllegroLib_5.2.8/lib/liballegro_ttf.dll.a"
+			"value" : "D:/AllegroLib_5.2.8/AllegroLib_5.2.8/lib/liballegro_ttf.dll.a"
 		},
 		{
 			"name" : "CMAKE_ADDR2LINE",
@@ -111,7 +111,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/llvm-mingw-20230919-msvcrt-x86_64/bin/llvm-addr2line.exe"
+			"value" : "C:/llvm-mingw-20231114-msvcrt-x86_64/bin/llvm-addr2line.exe"
 		},
 		{
 			"name" : "CMAKE_AR",
@@ -127,7 +127,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/llvm-mingw-20230919-msvcrt-x86_64/bin/llvm-ar.exe"
+			"value" : "C:/llvm-mingw-20231114-msvcrt-x86_64/bin/llvm-ar.exe"
 		},
 		{
 			"name" : "CMAKE_BUILD_TYPE",
@@ -151,7 +151,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/Rita/OneDrive/Documents/GitHub/2048-Project/build"
+			"value" : "c:/Users/Howard/Documents/GitHub/2048-Project/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -255,7 +255,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/llvm-mingw-20230919-msvcrt-x86_64/bin/clang++.exe"
+			"value" : "C:/llvm-mingw-20231114-msvcrt-x86_64/bin/clang++.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_AR",
@@ -271,7 +271,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/llvm-mingw-20230919-msvcrt-x86_64/bin/llvm-ar.exe"
+			"value" : "C:/llvm-mingw-20231114-msvcrt-x86_64/bin/llvm-ar.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS",
@@ -303,7 +303,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/llvm-mingw-20230919-msvcrt-x86_64/bin/llvm-ranlib.exe"
+			"value" : "C:/llvm-mingw-20231114-msvcrt-x86_64/bin/llvm-ranlib.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_FLAGS",
@@ -415,7 +415,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/llvm-mingw-20230919-msvcrt-x86_64/bin/clang.exe"
+			"value" : "C:/llvm-mingw-20231114-msvcrt-x86_64/bin/clang.exe"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_AR",
@@ -431,7 +431,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/llvm-mingw-20230919-msvcrt-x86_64/bin/llvm-ar.exe"
+			"value" : "C:/llvm-mingw-20231114-msvcrt-x86_64/bin/llvm-ar.exe"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_CLANG_SCAN_DEPS",
@@ -463,7 +463,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/llvm-mingw-20230919-msvcrt-x86_64/bin/llvm-ranlib.exe"
+			"value" : "C:/llvm-mingw-20231114-msvcrt-x86_64/bin/llvm-ranlib.exe"
 		},
 		{
 			"name" : "CMAKE_C_FLAGS",
@@ -575,7 +575,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/llvm-mingw-20230919-msvcrt-x86_64/bin/llvm-dlltool.exe"
+			"value" : "C:/llvm-mingw-20231114-msvcrt-x86_64/bin/llvm-dlltool.exe"
 		},
 		{
 			"name" : "CMAKE_EDIT_COMMAND",
@@ -715,7 +715,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/Rita/OneDrive/Documents/GitHub/2048-Project/build/CMakeFiles/pkgRedirects"
+			"value" : "C:/Users/Howard/Documents/GitHub/2048-Project/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -787,7 +787,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/Rita/OneDrive/Documents/GitHub/2048-Project"
+			"value" : "C:/Users/Howard/Documents/GitHub/2048-Project"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -815,7 +815,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/llvm-mingw-20230919-msvcrt-x86_64/bin/ld.lld.exe"
+			"value" : "C:/llvm-mingw-20231114-msvcrt-x86_64/bin/ld.lld.exe"
 		},
 		{
 			"name" : "CMAKE_MAKE_PROGRAM",
@@ -831,7 +831,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/llvm-mingw-20230919-msvcrt-x86_64/bin/mingw32-make.exe"
+			"value" : "C:/llvm-mingw-20231114-msvcrt-x86_64/bin/mingw32-make.exe"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -927,7 +927,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/llvm-mingw-20230919-msvcrt-x86_64/bin/llvm-nm.exe"
+			"value" : "C:/llvm-mingw-20231114-msvcrt-x86_64/bin/llvm-nm.exe"
 		},
 		{
 			"name" : "CMAKE_NUMBER_OF_MAKEFILES",
@@ -955,7 +955,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/llvm-mingw-20230919-msvcrt-x86_64/bin/llvm-objcopy.exe"
+			"value" : "C:/llvm-mingw-20231114-msvcrt-x86_64/bin/llvm-objcopy.exe"
 		},
 		{
 			"name" : "CMAKE_OBJDUMP",
@@ -971,7 +971,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/llvm-mingw-20230919-msvcrt-x86_64/bin/llvm-objdump.exe"
+			"value" : "C:/llvm-mingw-20231114-msvcrt-x86_64/bin/llvm-objdump.exe"
 		},
 		{
 			"name" : "CMAKE_PLATFORM_INFO_INITIALIZED",
@@ -1035,7 +1035,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/llvm-mingw-20230919-msvcrt-x86_64/bin/llvm-ranlib.exe"
+			"value" : "C:/llvm-mingw-20231114-msvcrt-x86_64/bin/llvm-ranlib.exe"
 		},
 		{
 			"name" : "CMAKE_RC_COMPILER",
@@ -1051,7 +1051,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/llvm-mingw-20230919-msvcrt-x86_64/bin/windres.exe"
+			"value" : "C:/llvm-mingw-20231114-msvcrt-x86_64/bin/windres.exe"
 		},
 		{
 			"name" : "CMAKE_RC_COMPILER_WORKS",
@@ -1159,7 +1159,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/llvm-mingw-20230919-msvcrt-x86_64/bin/llvm-readelf.exe"
+			"value" : "C:/llvm-mingw-20231114-msvcrt-x86_64/bin/llvm-readelf.exe"
 		},
 		{
 			"name" : "CMAKE_ROOT",
@@ -1379,7 +1379,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/llvm-mingw-20230919-msvcrt-x86_64/bin/llvm-strip.exe"
+			"value" : "C:/llvm-mingw-20231114-msvcrt-x86_64/bin/llvm-strip.exe"
 		},
 		{
 			"name" : "CMAKE_TAPI",
@@ -1423,7 +1423,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/Rita/OneDrive/Documents/GitHub/2048-Project/build"
+			"value" : "C:/Users/Howard/Documents/GitHub/2048-Project/build"
 		},
 		{
 			"name" : "YourAllegroProject_IS_TOP_LEVEL",
@@ -1447,7 +1447,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/Rita/OneDrive/Documents/GitHub/2048-Project"
+			"value" : "C:/Users/Howard/Documents/GitHub/2048-Project"
 		},
 		{
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",

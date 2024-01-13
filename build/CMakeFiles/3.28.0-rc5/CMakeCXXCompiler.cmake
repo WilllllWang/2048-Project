@@ -1,4 +1,4 @@
-set(CMAKE_CXX_COMPILER "C:/llvm-mingw-20230919-msvcrt-x86_64/bin/clang++.exe")
+set(CMAKE_CXX_COMPILER "C:/llvm-mingw-20231114-msvcrt-x86_64/bin/clang++.exe")
 set(CMAKE_CXX_COMPILER_ARG1 "")
 set(CMAKE_CXX_COMPILER_ID "Clang")
 set(CMAKE_CXX_COMPILER_VERSION "17.0.5")
@@ -22,11 +22,11 @@ set(CMAKE_CXX_SIMULATE_VERSION "")
 
 
 
-set(CMAKE_AR "C:/llvm-mingw-20230919-msvcrt-x86_64/bin/llvm-ar.exe")
-set(CMAKE_CXX_COMPILER_AR "C:/llvm-mingw-20230919-msvcrt-x86_64/bin/llvm-ar.exe")
-set(CMAKE_RANLIB "C:/llvm-mingw-20230919-msvcrt-x86_64/bin/llvm-ranlib.exe")
-set(CMAKE_CXX_COMPILER_RANLIB "C:/llvm-mingw-20230919-msvcrt-x86_64/bin/llvm-ranlib.exe")
-set(CMAKE_LINKER "C:/llvm-mingw-20230919-msvcrt-x86_64/bin/ld.lld.exe")
+set(CMAKE_AR "C:/llvm-mingw-20231114-msvcrt-x86_64/bin/llvm-ar.exe")
+set(CMAKE_CXX_COMPILER_AR "C:/llvm-mingw-20231114-msvcrt-x86_64/bin/llvm-ar.exe")
+set(CMAKE_RANLIB "C:/llvm-mingw-20231114-msvcrt-x86_64/bin/llvm-ranlib.exe")
+set(CMAKE_CXX_COMPILER_RANLIB "C:/llvm-mingw-20231114-msvcrt-x86_64/bin/llvm-ranlib.exe")
+set(CMAKE_LINKER "C:/llvm-mingw-20231114-msvcrt-x86_64/bin/ld.lld.exe")
 set(CMAKE_MT "")
 set(CMAKE_TAPI "CMAKE_TAPI-NOTFOUND")
 set(CMAKE_COMPILER_IS_GNUCXX )
@@ -79,7 +79,7 @@ endif()
 
 
 
-set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "C:/llvm-mingw-20230919-msvcrt-x86_64/include/c++/v1;C:/llvm-mingw-20230919-msvcrt-x86_64/lib/clang/17/include;C:/llvm-mingw-20230919-msvcrt-x86_64/include")
+set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "C:/llvm-mingw-20231114-msvcrt-x86_64/include/c++/v1;C:/llvm-mingw-20231114-msvcrt-x86_64/lib/clang/17/include;C:/llvm-mingw-20231114-msvcrt-x86_64/include")
 set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "c++;mingw32;unwind;moldname;mingwex;advapi32;shell32;user32;kernel32;mingw32;unwind;moldname;mingwex;kernel32")
-set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "C:/llvm-mingw-20230919-msvcrt-x86_64/x86_64-w64-mingw32/lib;C:/llvm-mingw-20230919-msvcrt-x86_64/x86_64-w64-mingw32/mingw/lib;C:/llvm-mingw-20230919-msvcrt-x86_64/lib;C:/llvm-mingw-20230919-msvcrt-x86_64/lib/clang/17/lib/windows")
+set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "C:/llvm-mingw-20231114-msvcrt-x86_64/x86_64-w64-mingw32/lib;C:/llvm-mingw-20231114-msvcrt-x86_64/x86_64-w64-mingw32/mingw/lib;C:/llvm-mingw-20231114-msvcrt-x86_64/lib;C:/llvm-mingw-20231114-msvcrt-x86_64/lib/clang/17/lib/windows")
 set(CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")

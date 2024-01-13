@@ -52,10 +52,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Rita\OneDrive\Documents\GitHub\2048-Project
+CMAKE_SOURCE_DIR = C:\Users\Howard\Documents\GitHub\2048-Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Rita\OneDrive\Documents\GitHub\2048-Project\build
+CMAKE_BINARY_DIR = C:\Users\Howard\Documents\GitHub\2048-Project\build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/2048.dir/depend.make
@@ -70,123 +70,123 @@ include CMakeFiles/2048.dir/flags.make
 
 CMakeFiles/2048.dir/src/checkGameCondition.c.obj: CMakeFiles/2048.dir/flags.make
 CMakeFiles/2048.dir/src/checkGameCondition.c.obj: CMakeFiles/2048.dir/includes_C.rsp
-CMakeFiles/2048.dir/src/checkGameCondition.c.obj: C:/Users/Rita/OneDrive/Documents/GitHub/2048-Project/src/checkGameCondition.c
+CMakeFiles/2048.dir/src/checkGameCondition.c.obj: C:/Users/Howard/Documents/GitHub/2048-Project/src/checkGameCondition.c
 CMakeFiles/2048.dir/src/checkGameCondition.c.obj: CMakeFiles/2048.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Rita\OneDrive\Documents\GitHub\2048-Project\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/2048.dir/src/checkGameCondition.c.obj"
-	C:\llvm-mingw-20230919-msvcrt-x86_64\bin\clang.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/2048.dir/src/checkGameCondition.c.obj -MF CMakeFiles\2048.dir\src\checkGameCondition.c.obj.d -o CMakeFiles\2048.dir\src\checkGameCondition.c.obj -c C:\Users\Rita\OneDrive\Documents\GitHub\2048-Project\src\checkGameCondition.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Howard\Documents\GitHub\2048-Project\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/2048.dir/src/checkGameCondition.c.obj"
+	C:\llvm-mingw-20231114-msvcrt-x86_64\bin\clang.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/2048.dir/src/checkGameCondition.c.obj -MF CMakeFiles\2048.dir\src\checkGameCondition.c.obj.d -o CMakeFiles\2048.dir\src\checkGameCondition.c.obj -c C:\Users\Howard\Documents\GitHub\2048-Project\src\checkGameCondition.c
 
 CMakeFiles/2048.dir/src/checkGameCondition.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/2048.dir/src/checkGameCondition.c.i"
-	C:\llvm-mingw-20230919-msvcrt-x86_64\bin\clang.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Rita\OneDrive\Documents\GitHub\2048-Project\src\checkGameCondition.c > CMakeFiles\2048.dir\src\checkGameCondition.c.i
+	C:\llvm-mingw-20231114-msvcrt-x86_64\bin\clang.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Howard\Documents\GitHub\2048-Project\src\checkGameCondition.c > CMakeFiles\2048.dir\src\checkGameCondition.c.i
 
 CMakeFiles/2048.dir/src/checkGameCondition.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/2048.dir/src/checkGameCondition.c.s"
-	C:\llvm-mingw-20230919-msvcrt-x86_64\bin\clang.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Rita\OneDrive\Documents\GitHub\2048-Project\src\checkGameCondition.c -o CMakeFiles\2048.dir\src\checkGameCondition.c.s
+	C:\llvm-mingw-20231114-msvcrt-x86_64\bin\clang.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Howard\Documents\GitHub\2048-Project\src\checkGameCondition.c -o CMakeFiles\2048.dir\src\checkGameCondition.c.s
 
 CMakeFiles/2048.dir/src/drawGame.c.obj: CMakeFiles/2048.dir/flags.make
 CMakeFiles/2048.dir/src/drawGame.c.obj: CMakeFiles/2048.dir/includes_C.rsp
-CMakeFiles/2048.dir/src/drawGame.c.obj: C:/Users/Rita/OneDrive/Documents/GitHub/2048-Project/src/drawGame.c
+CMakeFiles/2048.dir/src/drawGame.c.obj: C:/Users/Howard/Documents/GitHub/2048-Project/src/drawGame.c
 CMakeFiles/2048.dir/src/drawGame.c.obj: CMakeFiles/2048.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Rita\OneDrive\Documents\GitHub\2048-Project\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/2048.dir/src/drawGame.c.obj"
-	C:\llvm-mingw-20230919-msvcrt-x86_64\bin\clang.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/2048.dir/src/drawGame.c.obj -MF CMakeFiles\2048.dir\src\drawGame.c.obj.d -o CMakeFiles\2048.dir\src\drawGame.c.obj -c C:\Users\Rita\OneDrive\Documents\GitHub\2048-Project\src\drawGame.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Howard\Documents\GitHub\2048-Project\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/2048.dir/src/drawGame.c.obj"
+	C:\llvm-mingw-20231114-msvcrt-x86_64\bin\clang.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/2048.dir/src/drawGame.c.obj -MF CMakeFiles\2048.dir\src\drawGame.c.obj.d -o CMakeFiles\2048.dir\src\drawGame.c.obj -c C:\Users\Howard\Documents\GitHub\2048-Project\src\drawGame.c
 
 CMakeFiles/2048.dir/src/drawGame.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/2048.dir/src/drawGame.c.i"
-	C:\llvm-mingw-20230919-msvcrt-x86_64\bin\clang.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Rita\OneDrive\Documents\GitHub\2048-Project\src\drawGame.c > CMakeFiles\2048.dir\src\drawGame.c.i
+	C:\llvm-mingw-20231114-msvcrt-x86_64\bin\clang.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Howard\Documents\GitHub\2048-Project\src\drawGame.c > CMakeFiles\2048.dir\src\drawGame.c.i
 
 CMakeFiles/2048.dir/src/drawGame.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/2048.dir/src/drawGame.c.s"
-	C:\llvm-mingw-20230919-msvcrt-x86_64\bin\clang.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Rita\OneDrive\Documents\GitHub\2048-Project\src\drawGame.c -o CMakeFiles\2048.dir\src\drawGame.c.s
+	C:\llvm-mingw-20231114-msvcrt-x86_64\bin\clang.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Howard\Documents\GitHub\2048-Project\src\drawGame.c -o CMakeFiles\2048.dir\src\drawGame.c.s
 
 CMakeFiles/2048.dir/src/generateNewTile.c.obj: CMakeFiles/2048.dir/flags.make
 CMakeFiles/2048.dir/src/generateNewTile.c.obj: CMakeFiles/2048.dir/includes_C.rsp
-CMakeFiles/2048.dir/src/generateNewTile.c.obj: C:/Users/Rita/OneDrive/Documents/GitHub/2048-Project/src/generateNewTile.c
+CMakeFiles/2048.dir/src/generateNewTile.c.obj: C:/Users/Howard/Documents/GitHub/2048-Project/src/generateNewTile.c
 CMakeFiles/2048.dir/src/generateNewTile.c.obj: CMakeFiles/2048.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Rita\OneDrive\Documents\GitHub\2048-Project\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/2048.dir/src/generateNewTile.c.obj"
-	C:\llvm-mingw-20230919-msvcrt-x86_64\bin\clang.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/2048.dir/src/generateNewTile.c.obj -MF CMakeFiles\2048.dir\src\generateNewTile.c.obj.d -o CMakeFiles\2048.dir\src\generateNewTile.c.obj -c C:\Users\Rita\OneDrive\Documents\GitHub\2048-Project\src\generateNewTile.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Howard\Documents\GitHub\2048-Project\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/2048.dir/src/generateNewTile.c.obj"
+	C:\llvm-mingw-20231114-msvcrt-x86_64\bin\clang.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/2048.dir/src/generateNewTile.c.obj -MF CMakeFiles\2048.dir\src\generateNewTile.c.obj.d -o CMakeFiles\2048.dir\src\generateNewTile.c.obj -c C:\Users\Howard\Documents\GitHub\2048-Project\src\generateNewTile.c
 
 CMakeFiles/2048.dir/src/generateNewTile.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/2048.dir/src/generateNewTile.c.i"
-	C:\llvm-mingw-20230919-msvcrt-x86_64\bin\clang.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Rita\OneDrive\Documents\GitHub\2048-Project\src\generateNewTile.c > CMakeFiles\2048.dir\src\generateNewTile.c.i
+	C:\llvm-mingw-20231114-msvcrt-x86_64\bin\clang.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Howard\Documents\GitHub\2048-Project\src\generateNewTile.c > CMakeFiles\2048.dir\src\generateNewTile.c.i
 
 CMakeFiles/2048.dir/src/generateNewTile.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/2048.dir/src/generateNewTile.c.s"
-	C:\llvm-mingw-20230919-msvcrt-x86_64\bin\clang.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Rita\OneDrive\Documents\GitHub\2048-Project\src\generateNewTile.c -o CMakeFiles\2048.dir\src\generateNewTile.c.s
+	C:\llvm-mingw-20231114-msvcrt-x86_64\bin\clang.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Howard\Documents\GitHub\2048-Project\src\generateNewTile.c -o CMakeFiles\2048.dir\src\generateNewTile.c.s
 
 CMakeFiles/2048.dir/src/initializeGame.c.obj: CMakeFiles/2048.dir/flags.make
 CMakeFiles/2048.dir/src/initializeGame.c.obj: CMakeFiles/2048.dir/includes_C.rsp
-CMakeFiles/2048.dir/src/initializeGame.c.obj: C:/Users/Rita/OneDrive/Documents/GitHub/2048-Project/src/initializeGame.c
+CMakeFiles/2048.dir/src/initializeGame.c.obj: C:/Users/Howard/Documents/GitHub/2048-Project/src/initializeGame.c
 CMakeFiles/2048.dir/src/initializeGame.c.obj: CMakeFiles/2048.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Rita\OneDrive\Documents\GitHub\2048-Project\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/2048.dir/src/initializeGame.c.obj"
-	C:\llvm-mingw-20230919-msvcrt-x86_64\bin\clang.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/2048.dir/src/initializeGame.c.obj -MF CMakeFiles\2048.dir\src\initializeGame.c.obj.d -o CMakeFiles\2048.dir\src\initializeGame.c.obj -c C:\Users\Rita\OneDrive\Documents\GitHub\2048-Project\src\initializeGame.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Howard\Documents\GitHub\2048-Project\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/2048.dir/src/initializeGame.c.obj"
+	C:\llvm-mingw-20231114-msvcrt-x86_64\bin\clang.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/2048.dir/src/initializeGame.c.obj -MF CMakeFiles\2048.dir\src\initializeGame.c.obj.d -o CMakeFiles\2048.dir\src\initializeGame.c.obj -c C:\Users\Howard\Documents\GitHub\2048-Project\src\initializeGame.c
 
 CMakeFiles/2048.dir/src/initializeGame.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/2048.dir/src/initializeGame.c.i"
-	C:\llvm-mingw-20230919-msvcrt-x86_64\bin\clang.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Rita\OneDrive\Documents\GitHub\2048-Project\src\initializeGame.c > CMakeFiles\2048.dir\src\initializeGame.c.i
+	C:\llvm-mingw-20231114-msvcrt-x86_64\bin\clang.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Howard\Documents\GitHub\2048-Project\src\initializeGame.c > CMakeFiles\2048.dir\src\initializeGame.c.i
 
 CMakeFiles/2048.dir/src/initializeGame.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/2048.dir/src/initializeGame.c.s"
-	C:\llvm-mingw-20230919-msvcrt-x86_64\bin\clang.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Rita\OneDrive\Documents\GitHub\2048-Project\src\initializeGame.c -o CMakeFiles\2048.dir\src\initializeGame.c.s
+	C:\llvm-mingw-20231114-msvcrt-x86_64\bin\clang.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Howard\Documents\GitHub\2048-Project\src\initializeGame.c -o CMakeFiles\2048.dir\src\initializeGame.c.s
 
 CMakeFiles/2048.dir/src/main.c.obj: CMakeFiles/2048.dir/flags.make
 CMakeFiles/2048.dir/src/main.c.obj: CMakeFiles/2048.dir/includes_C.rsp
-CMakeFiles/2048.dir/src/main.c.obj: C:/Users/Rita/OneDrive/Documents/GitHub/2048-Project/src/main.c
+CMakeFiles/2048.dir/src/main.c.obj: C:/Users/Howard/Documents/GitHub/2048-Project/src/main.c
 CMakeFiles/2048.dir/src/main.c.obj: CMakeFiles/2048.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Rita\OneDrive\Documents\GitHub\2048-Project\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/2048.dir/src/main.c.obj"
-	C:\llvm-mingw-20230919-msvcrt-x86_64\bin\clang.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/2048.dir/src/main.c.obj -MF CMakeFiles\2048.dir\src\main.c.obj.d -o CMakeFiles\2048.dir\src\main.c.obj -c C:\Users\Rita\OneDrive\Documents\GitHub\2048-Project\src\main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Howard\Documents\GitHub\2048-Project\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/2048.dir/src/main.c.obj"
+	C:\llvm-mingw-20231114-msvcrt-x86_64\bin\clang.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/2048.dir/src/main.c.obj -MF CMakeFiles\2048.dir\src\main.c.obj.d -o CMakeFiles\2048.dir\src\main.c.obj -c C:\Users\Howard\Documents\GitHub\2048-Project\src\main.c
 
 CMakeFiles/2048.dir/src/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/2048.dir/src/main.c.i"
-	C:\llvm-mingw-20230919-msvcrt-x86_64\bin\clang.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Rita\OneDrive\Documents\GitHub\2048-Project\src\main.c > CMakeFiles\2048.dir\src\main.c.i
+	C:\llvm-mingw-20231114-msvcrt-x86_64\bin\clang.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Howard\Documents\GitHub\2048-Project\src\main.c > CMakeFiles\2048.dir\src\main.c.i
 
 CMakeFiles/2048.dir/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/2048.dir/src/main.c.s"
-	C:\llvm-mingw-20230919-msvcrt-x86_64\bin\clang.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Rita\OneDrive\Documents\GitHub\2048-Project\src\main.c -o CMakeFiles\2048.dir\src\main.c.s
+	C:\llvm-mingw-20231114-msvcrt-x86_64\bin\clang.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Howard\Documents\GitHub\2048-Project\src\main.c -o CMakeFiles\2048.dir\src\main.c.s
 
 CMakeFiles/2048.dir/src/menu.c.obj: CMakeFiles/2048.dir/flags.make
 CMakeFiles/2048.dir/src/menu.c.obj: CMakeFiles/2048.dir/includes_C.rsp
-CMakeFiles/2048.dir/src/menu.c.obj: C:/Users/Rita/OneDrive/Documents/GitHub/2048-Project/src/menu.c
+CMakeFiles/2048.dir/src/menu.c.obj: C:/Users/Howard/Documents/GitHub/2048-Project/src/menu.c
 CMakeFiles/2048.dir/src/menu.c.obj: CMakeFiles/2048.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Rita\OneDrive\Documents\GitHub\2048-Project\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/2048.dir/src/menu.c.obj"
-	C:\llvm-mingw-20230919-msvcrt-x86_64\bin\clang.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/2048.dir/src/menu.c.obj -MF CMakeFiles\2048.dir\src\menu.c.obj.d -o CMakeFiles\2048.dir\src\menu.c.obj -c C:\Users\Rita\OneDrive\Documents\GitHub\2048-Project\src\menu.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Howard\Documents\GitHub\2048-Project\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/2048.dir/src/menu.c.obj"
+	C:\llvm-mingw-20231114-msvcrt-x86_64\bin\clang.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/2048.dir/src/menu.c.obj -MF CMakeFiles\2048.dir\src\menu.c.obj.d -o CMakeFiles\2048.dir\src\menu.c.obj -c C:\Users\Howard\Documents\GitHub\2048-Project\src\menu.c
 
 CMakeFiles/2048.dir/src/menu.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/2048.dir/src/menu.c.i"
-	C:\llvm-mingw-20230919-msvcrt-x86_64\bin\clang.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Rita\OneDrive\Documents\GitHub\2048-Project\src\menu.c > CMakeFiles\2048.dir\src\menu.c.i
+	C:\llvm-mingw-20231114-msvcrt-x86_64\bin\clang.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Howard\Documents\GitHub\2048-Project\src\menu.c > CMakeFiles\2048.dir\src\menu.c.i
 
 CMakeFiles/2048.dir/src/menu.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/2048.dir/src/menu.c.s"
-	C:\llvm-mingw-20230919-msvcrt-x86_64\bin\clang.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Rita\OneDrive\Documents\GitHub\2048-Project\src\menu.c -o CMakeFiles\2048.dir\src\menu.c.s
+	C:\llvm-mingw-20231114-msvcrt-x86_64\bin\clang.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Howard\Documents\GitHub\2048-Project\src\menu.c -o CMakeFiles\2048.dir\src\menu.c.s
 
 CMakeFiles/2048.dir/src/moveTiles.c.obj: CMakeFiles/2048.dir/flags.make
 CMakeFiles/2048.dir/src/moveTiles.c.obj: CMakeFiles/2048.dir/includes_C.rsp
-CMakeFiles/2048.dir/src/moveTiles.c.obj: C:/Users/Rita/OneDrive/Documents/GitHub/2048-Project/src/moveTiles.c
+CMakeFiles/2048.dir/src/moveTiles.c.obj: C:/Users/Howard/Documents/GitHub/2048-Project/src/moveTiles.c
 CMakeFiles/2048.dir/src/moveTiles.c.obj: CMakeFiles/2048.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Rita\OneDrive\Documents\GitHub\2048-Project\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/2048.dir/src/moveTiles.c.obj"
-	C:\llvm-mingw-20230919-msvcrt-x86_64\bin\clang.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/2048.dir/src/moveTiles.c.obj -MF CMakeFiles\2048.dir\src\moveTiles.c.obj.d -o CMakeFiles\2048.dir\src\moveTiles.c.obj -c C:\Users\Rita\OneDrive\Documents\GitHub\2048-Project\src\moveTiles.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Howard\Documents\GitHub\2048-Project\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/2048.dir/src/moveTiles.c.obj"
+	C:\llvm-mingw-20231114-msvcrt-x86_64\bin\clang.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/2048.dir/src/moveTiles.c.obj -MF CMakeFiles\2048.dir\src\moveTiles.c.obj.d -o CMakeFiles\2048.dir\src\moveTiles.c.obj -c C:\Users\Howard\Documents\GitHub\2048-Project\src\moveTiles.c
 
 CMakeFiles/2048.dir/src/moveTiles.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/2048.dir/src/moveTiles.c.i"
-	C:\llvm-mingw-20230919-msvcrt-x86_64\bin\clang.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Rita\OneDrive\Documents\GitHub\2048-Project\src\moveTiles.c > CMakeFiles\2048.dir\src\moveTiles.c.i
+	C:\llvm-mingw-20231114-msvcrt-x86_64\bin\clang.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Howard\Documents\GitHub\2048-Project\src\moveTiles.c > CMakeFiles\2048.dir\src\moveTiles.c.i
 
 CMakeFiles/2048.dir/src/moveTiles.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/2048.dir/src/moveTiles.c.s"
-	C:\llvm-mingw-20230919-msvcrt-x86_64\bin\clang.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Rita\OneDrive\Documents\GitHub\2048-Project\src\moveTiles.c -o CMakeFiles\2048.dir\src\moveTiles.c.s
+	C:\llvm-mingw-20231114-msvcrt-x86_64\bin\clang.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Howard\Documents\GitHub\2048-Project\src\moveTiles.c -o CMakeFiles\2048.dir\src\moveTiles.c.s
 
 CMakeFiles/2048.dir/src/uninstall.c.obj: CMakeFiles/2048.dir/flags.make
 CMakeFiles/2048.dir/src/uninstall.c.obj: CMakeFiles/2048.dir/includes_C.rsp
-CMakeFiles/2048.dir/src/uninstall.c.obj: C:/Users/Rita/OneDrive/Documents/GitHub/2048-Project/src/uninstall.c
+CMakeFiles/2048.dir/src/uninstall.c.obj: C:/Users/Howard/Documents/GitHub/2048-Project/src/uninstall.c
 CMakeFiles/2048.dir/src/uninstall.c.obj: CMakeFiles/2048.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Rita\OneDrive\Documents\GitHub\2048-Project\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/2048.dir/src/uninstall.c.obj"
-	C:\llvm-mingw-20230919-msvcrt-x86_64\bin\clang.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/2048.dir/src/uninstall.c.obj -MF CMakeFiles\2048.dir\src\uninstall.c.obj.d -o CMakeFiles\2048.dir\src\uninstall.c.obj -c C:\Users\Rita\OneDrive\Documents\GitHub\2048-Project\src\uninstall.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Howard\Documents\GitHub\2048-Project\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/2048.dir/src/uninstall.c.obj"
+	C:\llvm-mingw-20231114-msvcrt-x86_64\bin\clang.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/2048.dir/src/uninstall.c.obj -MF CMakeFiles\2048.dir\src\uninstall.c.obj.d -o CMakeFiles\2048.dir\src\uninstall.c.obj -c C:\Users\Howard\Documents\GitHub\2048-Project\src\uninstall.c
 
 CMakeFiles/2048.dir/src/uninstall.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/2048.dir/src/uninstall.c.i"
-	C:\llvm-mingw-20230919-msvcrt-x86_64\bin\clang.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Rita\OneDrive\Documents\GitHub\2048-Project\src\uninstall.c > CMakeFiles\2048.dir\src\uninstall.c.i
+	C:\llvm-mingw-20231114-msvcrt-x86_64\bin\clang.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Howard\Documents\GitHub\2048-Project\src\uninstall.c > CMakeFiles\2048.dir\src\uninstall.c.i
 
 CMakeFiles/2048.dir/src/uninstall.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/2048.dir/src/uninstall.c.s"
-	C:\llvm-mingw-20230919-msvcrt-x86_64\bin\clang.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Rita\OneDrive\Documents\GitHub\2048-Project\src\uninstall.c -o CMakeFiles\2048.dir\src\uninstall.c.s
+	C:\llvm-mingw-20231114-msvcrt-x86_64\bin\clang.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Howard\Documents\GitHub\2048-Project\src\uninstall.c -o CMakeFiles\2048.dir\src\uninstall.c.s
 
 # Object files for target 2048
 2048_OBJECTS = \
@@ -202,31 +202,31 @@ CMakeFiles/2048.dir/src/uninstall.c.s: cmake_force
 # External object files for target 2048
 2048_EXTERNAL_OBJECTS =
 
-C:/Users/Rita/OneDrive/Documents/GitHub/2048-Project/2048.exe: CMakeFiles/2048.dir/src/checkGameCondition.c.obj
-C:/Users/Rita/OneDrive/Documents/GitHub/2048-Project/2048.exe: CMakeFiles/2048.dir/src/drawGame.c.obj
-C:/Users/Rita/OneDrive/Documents/GitHub/2048-Project/2048.exe: CMakeFiles/2048.dir/src/generateNewTile.c.obj
-C:/Users/Rita/OneDrive/Documents/GitHub/2048-Project/2048.exe: CMakeFiles/2048.dir/src/initializeGame.c.obj
-C:/Users/Rita/OneDrive/Documents/GitHub/2048-Project/2048.exe: CMakeFiles/2048.dir/src/main.c.obj
-C:/Users/Rita/OneDrive/Documents/GitHub/2048-Project/2048.exe: CMakeFiles/2048.dir/src/menu.c.obj
-C:/Users/Rita/OneDrive/Documents/GitHub/2048-Project/2048.exe: CMakeFiles/2048.dir/src/moveTiles.c.obj
-C:/Users/Rita/OneDrive/Documents/GitHub/2048-Project/2048.exe: CMakeFiles/2048.dir/src/uninstall.c.obj
-C:/Users/Rita/OneDrive/Documents/GitHub/2048-Project/2048.exe: CMakeFiles/2048.dir/build.make
-C:/Users/Rita/OneDrive/Documents/GitHub/2048-Project/2048.exe: D:/AllegroLib_5.2.8/lib/liballegro.dll.a
-C:/Users/Rita/OneDrive/Documents/GitHub/2048-Project/2048.exe: D:/AllegroLib_5.2.8/lib/liballegro_primitives.dll.a
-C:/Users/Rita/OneDrive/Documents/GitHub/2048-Project/2048.exe: D:/AllegroLib_5.2.8/lib/liballegro_image.dll.a
-C:/Users/Rita/OneDrive/Documents/GitHub/2048-Project/2048.exe: D:/AllegroLib_5.2.8/lib/liballegro_audio.dll.a
-C:/Users/Rita/OneDrive/Documents/GitHub/2048-Project/2048.exe: D:/AllegroLib_5.2.8/lib/liballegro_acodec.dll.a
-C:/Users/Rita/OneDrive/Documents/GitHub/2048-Project/2048.exe: D:/AllegroLib_5.2.8/lib/liballegro_font.dll.a
-C:/Users/Rita/OneDrive/Documents/GitHub/2048-Project/2048.exe: D:/AllegroLib_5.2.8/lib/liballegro_ttf.dll.a
-C:/Users/Rita/OneDrive/Documents/GitHub/2048-Project/2048.exe: D:/AllegroLib_5.2.8/lib/liballegro_dialog.dll.a
-C:/Users/Rita/OneDrive/Documents/GitHub/2048-Project/2048.exe: CMakeFiles/2048.dir/linkLibs.rsp
-C:/Users/Rita/OneDrive/Documents/GitHub/2048-Project/2048.exe: CMakeFiles/2048.dir/objects1.rsp
-C:/Users/Rita/OneDrive/Documents/GitHub/2048-Project/2048.exe: CMakeFiles/2048.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Rita\OneDrive\Documents\GitHub\2048-Project\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C executable C:\Users\Rita\OneDrive\Documents\GitHub\2048-Project\2048.exe"
+C:/Users/Howard/Documents/GitHub/2048-Project/2048.exe: CMakeFiles/2048.dir/src/checkGameCondition.c.obj
+C:/Users/Howard/Documents/GitHub/2048-Project/2048.exe: CMakeFiles/2048.dir/src/drawGame.c.obj
+C:/Users/Howard/Documents/GitHub/2048-Project/2048.exe: CMakeFiles/2048.dir/src/generateNewTile.c.obj
+C:/Users/Howard/Documents/GitHub/2048-Project/2048.exe: CMakeFiles/2048.dir/src/initializeGame.c.obj
+C:/Users/Howard/Documents/GitHub/2048-Project/2048.exe: CMakeFiles/2048.dir/src/main.c.obj
+C:/Users/Howard/Documents/GitHub/2048-Project/2048.exe: CMakeFiles/2048.dir/src/menu.c.obj
+C:/Users/Howard/Documents/GitHub/2048-Project/2048.exe: CMakeFiles/2048.dir/src/moveTiles.c.obj
+C:/Users/Howard/Documents/GitHub/2048-Project/2048.exe: CMakeFiles/2048.dir/src/uninstall.c.obj
+C:/Users/Howard/Documents/GitHub/2048-Project/2048.exe: CMakeFiles/2048.dir/build.make
+C:/Users/Howard/Documents/GitHub/2048-Project/2048.exe: D:/AllegroLib_5.2.8/AllegroLib_5.2.8/lib/liballegro.dll.a
+C:/Users/Howard/Documents/GitHub/2048-Project/2048.exe: D:/AllegroLib_5.2.8/AllegroLib_5.2.8/lib/liballegro_primitives.dll.a
+C:/Users/Howard/Documents/GitHub/2048-Project/2048.exe: D:/AllegroLib_5.2.8/AllegroLib_5.2.8/lib/liballegro_image.dll.a
+C:/Users/Howard/Documents/GitHub/2048-Project/2048.exe: D:/AllegroLib_5.2.8/AllegroLib_5.2.8/lib/liballegro_audio.dll.a
+C:/Users/Howard/Documents/GitHub/2048-Project/2048.exe: D:/AllegroLib_5.2.8/AllegroLib_5.2.8/lib/liballegro_acodec.dll.a
+C:/Users/Howard/Documents/GitHub/2048-Project/2048.exe: D:/AllegroLib_5.2.8/AllegroLib_5.2.8/lib/liballegro_font.dll.a
+C:/Users/Howard/Documents/GitHub/2048-Project/2048.exe: D:/AllegroLib_5.2.8/AllegroLib_5.2.8/lib/liballegro_ttf.dll.a
+C:/Users/Howard/Documents/GitHub/2048-Project/2048.exe: D:/AllegroLib_5.2.8/AllegroLib_5.2.8/lib/liballegro_dialog.dll.a
+C:/Users/Howard/Documents/GitHub/2048-Project/2048.exe: CMakeFiles/2048.dir/linkLibs.rsp
+C:/Users/Howard/Documents/GitHub/2048-Project/2048.exe: CMakeFiles/2048.dir/objects1.rsp
+C:/Users/Howard/Documents/GitHub/2048-Project/2048.exe: CMakeFiles/2048.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Howard\Documents\GitHub\2048-Project\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C executable C:\Users\Howard\Documents\GitHub\2048-Project\2048.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\2048.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/2048.dir/build: C:/Users/Rita/OneDrive/Documents/GitHub/2048-Project/2048.exe
+CMakeFiles/2048.dir/build: C:/Users/Howard/Documents/GitHub/2048-Project/2048.exe
 .PHONY : CMakeFiles/2048.dir/build
 
 CMakeFiles/2048.dir/clean:
@@ -234,6 +234,6 @@ CMakeFiles/2048.dir/clean:
 .PHONY : CMakeFiles/2048.dir/clean
 
 CMakeFiles/2048.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Rita\OneDrive\Documents\GitHub\2048-Project C:\Users\Rita\OneDrive\Documents\GitHub\2048-Project C:\Users\Rita\OneDrive\Documents\GitHub\2048-Project\build C:\Users\Rita\OneDrive\Documents\GitHub\2048-Project\build C:\Users\Rita\OneDrive\Documents\GitHub\2048-Project\build\CMakeFiles\2048.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Howard\Documents\GitHub\2048-Project C:\Users\Howard\Documents\GitHub\2048-Project C:\Users\Howard\Documents\GitHub\2048-Project\build C:\Users\Howard\Documents\GitHub\2048-Project\build C:\Users\Howard\Documents\GitHub\2048-Project\build\CMakeFiles\2048.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/2048.dir/depend
 

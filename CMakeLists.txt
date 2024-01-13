@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.5)
 project(YourAllegroProject)
 
-set(ALLEGRO_DIR "D:/AllegroLib_5.2.8")
+set(ALLEGRO_DIR "D:/AllegroLib_5.2.8/AllegroLib_5.2.8")
 
 include_directories(${ALLEGRO_DIR}/include)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)

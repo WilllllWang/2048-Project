@@ -10,15 +10,15 @@
 				{
 					"includeDirectories" : 
 					[
-						"C:/llvm-mingw-20230919-msvcrt-x86_64/lib/clang/17/include",
-						"C:/llvm-mingw-20230919-msvcrt-x86_64/include"
+						"C:/llvm-mingw-20231114-msvcrt-x86_64/lib/clang/17/include",
+						"C:/llvm-mingw-20231114-msvcrt-x86_64/include"
 					],
 					"linkDirectories" : 
 					[
-						"C:/llvm-mingw-20230919-msvcrt-x86_64/x86_64-w64-mingw32/lib",
-						"C:/llvm-mingw-20230919-msvcrt-x86_64/x86_64-w64-mingw32/mingw/lib",
-						"C:/llvm-mingw-20230919-msvcrt-x86_64/lib",
-						"C:/llvm-mingw-20230919-msvcrt-x86_64/lib/clang/17/lib/windows"
+						"C:/llvm-mingw-20231114-msvcrt-x86_64/x86_64-w64-mingw32/lib",
+						"C:/llvm-mingw-20231114-msvcrt-x86_64/x86_64-w64-mingw32/mingw/lib",
+						"C:/llvm-mingw-20231114-msvcrt-x86_64/lib",
+						"C:/llvm-mingw-20231114-msvcrt-x86_64/lib/clang/17/lib/windows"
 					],
 					"linkFrameworkDirectories" : [],
 					"linkLibraries" : 
@@ -38,7 +38,7 @@
 						"kernel32"
 					]
 				},
-				"path" : "C:/llvm-mingw-20230919-msvcrt-x86_64/bin/clang.exe",
+				"path" : "C:/llvm-mingw-20231114-msvcrt-x86_64/bin/clang.exe",
 				"version" : "17.0.5"
 			},
 			"language" : "C",
@@ -56,16 +56,16 @@
 				{
 					"includeDirectories" : 
 					[
-						"C:/llvm-mingw-20230919-msvcrt-x86_64/include/c++/v1",
-						"C:/llvm-mingw-20230919-msvcrt-x86_64/lib/clang/17/include",
-						"C:/llvm-mingw-20230919-msvcrt-x86_64/include"
+						"C:/llvm-mingw-20231114-msvcrt-x86_64/include/c++/v1",
+						"C:/llvm-mingw-20231114-msvcrt-x86_64/lib/clang/17/include",
+						"C:/llvm-mingw-20231114-msvcrt-x86_64/include"
 					],
 					"linkDirectories" : 
 					[
-						"C:/llvm-mingw-20230919-msvcrt-x86_64/x86_64-w64-mingw32/lib",
-						"C:/llvm-mingw-20230919-msvcrt-x86_64/x86_64-w64-mingw32/mingw/lib",
-						"C:/llvm-mingw-20230919-msvcrt-x86_64/lib",
-						"C:/llvm-mingw-20230919-msvcrt-x86_64/lib/clang/17/lib/windows"
+						"C:/llvm-mingw-20231114-msvcrt-x86_64/x86_64-w64-mingw32/lib",
+						"C:/llvm-mingw-20231114-msvcrt-x86_64/x86_64-w64-mingw32/mingw/lib",
+						"C:/llvm-mingw-20231114-msvcrt-x86_64/lib",
+						"C:/llvm-mingw-20231114-msvcrt-x86_64/lib/clang/17/lib/windows"
 					],
 					"linkFrameworkDirectories" : [],
 					"linkLibraries" : 
@@ -86,7 +86,7 @@
 						"kernel32"
 					]
 				},
-				"path" : "C:/llvm-mingw-20230919-msvcrt-x86_64/bin/clang++.exe",
+				"path" : "C:/llvm-mingw-20231114-msvcrt-x86_64/bin/clang++.exe",
 				"version" : "17.0.5"
 			},
 			"language" : "CXX",
@@ -112,7 +112,7 @@
 			"compiler" : 
 			{
 				"implicit" : {},
-				"path" : "C:/llvm-mingw-20230919-msvcrt-x86_64/bin/windres.exe"
+				"path" : "C:/llvm-mingw-20231114-msvcrt-x86_64/bin/windres.exe"
 			},
 			"language" : "RC",
 			"sourceFileExtensions" : 

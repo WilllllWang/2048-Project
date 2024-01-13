@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "C:/Users/Rita/OneDrive/Documents/GitHub/2048-Project/2048.exe"
-  "C:/Users/Rita/OneDrive/Documents/GitHub/2048-Project/2048.exe.manifest"
-  "C:/Users/Rita/OneDrive/Documents/GitHub/2048-Project/2048.pdb"
-  "C:/Users/Rita/OneDrive/Documents/GitHub/2048-Project/lib2048.dll.a"
+  "C:/Users/Howard/Documents/GitHub/2048-Project/2048.exe"
+  "C:/Users/Howard/Documents/GitHub/2048-Project/2048.exe.manifest"
+  "C:/Users/Howard/Documents/GitHub/2048-Project/2048.pdb"
+  "C:/Users/Howard/Documents/GitHub/2048-Project/lib2048.dll.a"
   "CMakeFiles/2048.dir/src/checkGameCondition.c.obj"
   "CMakeFiles/2048.dir/src/checkGameCondition.c.obj.d"
   "CMakeFiles/2048.dir/src/drawGame.c.obj"

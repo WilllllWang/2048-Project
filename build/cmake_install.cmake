@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Rita/OneDrive/Documents/GitHub/2048-Project
+# Install script for directory: C:/Users/Howard/Documents/GitHub/2048-Project
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "C:/llvm-mingw-20230919-msvcrt-x86_64/bin/llvm-objdump.exe")
+  set(CMAKE_OBJDUMP "C:/llvm-mingw-20231114-msvcrt-x86_64/bin/llvm-objdump.exe")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/Rita/OneDrive/Documents/GitHub/2048-Project/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/Howard/Documents/GitHub/2048-Project/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
