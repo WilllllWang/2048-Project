@@ -4,48 +4,48 @@ bool moveTilesUp(Board *board, Blank *blank) {
     int row, col, row_above;
     bool moved = false;
     for(row = 1; row < BOARD_SIZE; row++){
-        for(col = 0; col < BOARD_SIZE; col++){//±q²Ä¤G¦C¶}©l¦V¤UÀË¬d¨C¦æ
+        for(col = 0; col < BOARD_SIZE; col++){//ï¿½qï¿½Ä¤Gï¿½Cï¿½}ï¿½lï¿½Vï¿½Uï¿½Ë¬dï¿½Cï¿½ï¿½
             if(board->grid[row][col].value != 0){
                 for(row_above = row - 1; row_above >= 0; row_above--){
                     if(board->grid[row_above][col].value == 0){
                         board->grid[row_above][col].value = board->grid[row][col].value;
                         board->grid[row][col].value = 0;
                         row = row_above; 
-                        moved = true;// ¦pªG¸Ó¤è¶ô¤W­±ªº¦ì¸m¬OªÅªº¡A±N¤è¶ô¦V¤W²¾°Ê
+                        moved = true;// ï¿½pï¿½Gï¿½Ó¤ï¿½ï¿½ï¿½Wï¿½ï¿½ï¿½ï¿½ï¿½ï¿½mï¿½Oï¿½Åªï¿½ï¿½Aï¿½Nï¿½ï¿½ï¿½ï¿½Vï¿½Wï¿½ï¿½ï¿½ï¿½
                     } 
-                    else if(board->grid[row_above][col].value == board->grid[row][col].value){// ¦pªG¤W­±ªº¤è¶ô¼Æ­È©M¸Ó¤è¶ô¬Û¦P
+                    else if(board->grid[row_above][col].value == board->grid[row][col].value){// ï¿½pï¿½Gï¿½Wï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ­È©Mï¿½Ó¤ï¿½ï¿½ï¿½Û¦P
                         switch(board->grid[row_above][col].value){
-                        case 2: blank->blank2 += board->grid[row_above][col].value; //Åã¥Ü®ø±¼"2"ªº¤è¶ô¼Æ¶q
+                        case 2: blank->blank2 += board->grid[row_above][col].value; //ï¿½ï¿½Ü®ï¿½ï¿½ï¿½"2"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶q
                         break;
-                        case 4: blank->blank4 += board->grid[row_above][col].value/2;//Åã¥Ü®ø±¼"4"ªº¤è¶ô¼Æ¶q
+                        case 4: blank->blank4 += board->grid[row_above][col].value/2;//ï¿½ï¿½Ü®ï¿½ï¿½ï¿½"4"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶q
                         break;
-                        case 8: blank->blank8 += board->grid[row_above][col].value/4;//Åã¥Ü®ø±¼"8"ªº¤è¶ô¼Æ¶q
+                        case 8: blank->blank8 += board->grid[row_above][col].value/4;//ï¿½ï¿½Ü®ï¿½ï¿½ï¿½"8"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶q
                         break;
-                        case 16: blank->blank16 += board->grid[row_above][col].value/8;//Åã¥Ü®ø±¼"16"ªº¤è¶ô¼Æ¶q
+                        case 16: blank->blank16 += board->grid[row_above][col].value/8;//ï¿½ï¿½Ü®ï¿½ï¿½ï¿½"16"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶q
                         break;
-                        case 32: blank->blank32 += board->grid[row_above][col].value/16;//Åã¥Ü®ø±¼"32"ªº¤è¶ô¼Æ¶q
+                        case 32: blank->blank32 += board->grid[row_above][col].value/16;//ï¿½ï¿½Ü®ï¿½ï¿½ï¿½"32"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶q
                         break;
-                        case 64: blank->blank64 += board->grid[row_above][col].value/32;//Åã¥Ü®ø±¼"64"ªº¤è¶ô¼Æ¶q
+                        case 64: blank->blank64 += board->grid[row_above][col].value/32;//ï¿½ï¿½Ü®ï¿½ï¿½ï¿½"64"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶q
                         break;
-                        case 128: blank->blank128 += board->grid[row_above][col].value/64;//Åã¥Ü®ø±¼"128"ªº¤è¶ô¼Æ¶q
+                        case 128: blank->blank128 += board->grid[row_above][col].value/64;//ï¿½ï¿½Ü®ï¿½ï¿½ï¿½"128"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶q
                         break;
-                        case 256: blank->blank256 += board->grid[row_above][col].value/128;//Åã¥Ü®ø±¼"256"ªº¤è¶ô¼Æ¶q
+                        case 256: blank->blank256 += board->grid[row_above][col].value/128;//ï¿½ï¿½Ü®ï¿½ï¿½ï¿½"256"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶q
                         break;
-                        case 512: blank->blank256 += board->grid[row_above][col].value/256;//Åã¥Ü®ø±¼"512"ªº¤è¶ô¼Æ¶q
+                        case 512: blank->blank256 += board->grid[row_above][col].value/256;//ï¿½ï¿½Ü®ï¿½ï¿½ï¿½"512"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶q
                         break;
-                        case 1024: blank->blank1024 += board->grid[row_above][col].value/512;//Åã¥Ü®ø±¼"1024"ªº¤è¶ô¼Æ¶q
+                        case 1024: blank->blank1024 += board->grid[row_above][col].value/512;//ï¿½ï¿½Ü®ï¿½ï¿½ï¿½"1024"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶q
                         break;
-                        case 2048: blank->blank2048 += board->grid[row_above][col].value/1024;//Åã¥Ü®ø±¼"2048"ªº¤è¶ô¼Æ¶q
+                        case 2048: blank->blank2048 += board->grid[row_above][col].value/1024;//ï¿½ï¿½Ü®ï¿½ï¿½ï¿½"2048"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶q
                         break;
                         }
-                        board->grid[row_above][col].value *= 2; //±N¦X¨Ö¤§¤è¶ô­È*2
-                        board->grid[row][col].value = 0;//±N·í«e¤è¶ô­È³]¬°0
-                        board->score += board->grid[row_above][col].value;//§ó·s¤À¼Æ
+                        board->grid[row_above][col].value *= 2; //ï¿½Nï¿½Xï¿½Ö¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*2
+                        board->grid[row][col].value = 0;//ï¿½Nï¿½ï¿½ï¿½eï¿½ï¿½ï¿½ï¿½È³]ï¿½ï¿½0
+                        board->score += board->grid[row_above][col].value;//ï¿½ï¿½sï¿½ï¿½ï¿½ï¿½
                         moved = true;
                         break;
                     } 
                     else{
-                        break; //­Y»P¤W¤è¤è¶ô¼Æ­È¤£¦P¡A«h¤¤Â_¤º¼h°j°é
+                        break; //ï¿½Yï¿½Pï¿½Wï¿½ï¿½ï¿½ï¿½ï¿½Æ­È¤ï¿½ï¿½Pï¿½Aï¿½hï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½hï¿½jï¿½ï¿½
                     }
                 }
             }
@@ -59,16 +59,16 @@ bool moveTilesDown(Board *board, Blank *blank) {
     int row, col, row_below;
     bool moved = false;
     for(row = BOARD_SIZE-2; row >= 0; row--){
-        for(col = 0; col < BOARD_SIZE; col++){//±q²Ä¤T¦C¶}©l¦V¤WÀË¬d¨C¦æ
+        for(col = 0; col < BOARD_SIZE; col++){//ï¿½qï¿½Ä¤Tï¿½Cï¿½}ï¿½lï¿½Vï¿½Wï¿½Ë¬dï¿½Cï¿½ï¿½
             if(board->grid[row][col].value != 0){
                 for(row_below = row + 1; row_below < BOARD_SIZE; row_below++){
                     if(board->grid[row_below][col].value == 0){
                         board->grid[row_below][col].value = board->grid[row][col].value;
                         board->grid[row][col].value = 0;
                         row = row_below; 
-                        moved = true;// ¦pªG¸Ó¤è¶ô¤U­±ªº¦ì¸m¬OªÅªº¡A±N¤è¶ô¦V¤U²¾°Ê
+                        moved = true;// ï¿½pï¿½Gï¿½Ó¤ï¿½ï¿½ï¿½Uï¿½ï¿½ï¿½ï¿½ï¿½ï¿½mï¿½Oï¿½Åªï¿½ï¿½Aï¿½Nï¿½ï¿½ï¿½ï¿½Vï¿½Uï¿½ï¿½ï¿½ï¿½
                     } 
-                    else if(board->grid[row_below][col].value == board->grid[row][col].value){//¦pªG¤U¤èªº¤è¶ô¼Æ­È»P¸Ó¤è¶ô¬Û¦P
+                    else if(board->grid[row_below][col].value == board->grid[row][col].value){//ï¿½pï¿½Gï¿½Uï¿½èªºï¿½ï¿½ï¿½ï¿½Æ­È»Pï¿½Ó¤ï¿½ï¿½ï¿½Û¦P
                         switch(board->grid[row_below][col].value){
                         case 2: blank->blank2 += board->grid[row_below][col].value;
                         break;
@@ -93,14 +93,14 @@ bool moveTilesDown(Board *board, Blank *blank) {
                         case 2048: blank->blank2048 += board->grid[row_below][col].value/1024;
                         break;
                         }
-                        board->grid[row_below][col].value *= 2;//±N¦X¨Ö¤§¤è¶ô­È*2
-                        board->grid[row][col].value = 0;//±N·í«e¤è¶ô­È³]¬°0
-                        board->score += board->grid[row_below][col].value;//§ó·s¤À¼Æ
+                        board->grid[row_below][col].value *= 2;//ï¿½Nï¿½Xï¿½Ö¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*2
+                        board->grid[row][col].value = 0;//ï¿½Nï¿½ï¿½ï¿½eï¿½ï¿½ï¿½ï¿½È³]ï¿½ï¿½0
+                        board->score += board->grid[row_below][col].value;//ï¿½ï¿½sï¿½ï¿½ï¿½ï¿½
                         moved = true;
                         break;
                     } 
                     else{
-                        break;//­Y»P¤U¤è¤è¶ô¼Æ­È¤£¦P¡A«h¤¤Â_¤º¼h°j°é
+                        break;//ï¿½Yï¿½Pï¿½Uï¿½ï¿½ï¿½ï¿½ï¿½Æ­È¤ï¿½ï¿½Pï¿½Aï¿½hï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½hï¿½jï¿½ï¿½
                     }
                     
                 }
@@ -115,16 +115,16 @@ bool moveTilesLeft(Board *board, Blank *blank) {
     int row, col, col_left;
     bool moved = false;
     for(row = 0; row < BOARD_SIZE; row++){
-        for(col = 1; col < BOARD_SIZE; col++){//±q²Ä¤G¦æ¶}©l¦V¥k³v¦CÀË¬d
+        for(col = 1; col < BOARD_SIZE; col++){//ï¿½qï¿½Ä¤Gï¿½ï¿½}ï¿½lï¿½Vï¿½kï¿½vï¿½Cï¿½Ë¬d
             if(board->grid[row][col].value != 0){
                 for(col_left = col - 1; col_left >= 0; col_left--){
                     if(board->grid[row][col_left].value == 0){
                         board->grid[row][col_left].value = board->grid[row][col].value;
                         board->grid[row][col].value = 0;
                         col = col_left; 
-                        moved = true;// ¦pªG¸Ó¤è¶ô¥ª¤èªº¦ì¸m¬OªÅªº¡A±N¤è¶ô¦V¥ª²¾°Ê
+                        moved = true;// ï¿½pï¿½Gï¿½Ó¤ï¿½ï¿½ï¿½ï¿½ï¿½èªºï¿½ï¿½mï¿½Oï¿½Åªï¿½ï¿½Aï¿½Nï¿½ï¿½ï¿½ï¿½Vï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
                     } 
-                    else if(board->grid[row][col_left].value == board->grid[row][col].value){//¦pªG¥ª¤èªº¤è¶ô¼Æ­È»P¸Ó¤è¶ô¬Û¦P
+                    else if(board->grid[row][col_left].value == board->grid[row][col].value){//ï¿½pï¿½Gï¿½ï¿½ï¿½èªºï¿½ï¿½ï¿½ï¿½Æ­È»Pï¿½Ó¤ï¿½ï¿½ï¿½Û¦P
                         switch(board->grid[row][col_left].value){
                         case 2: blank->blank2 += board->grid[row][col_left].value;
                         break;
@@ -149,14 +149,14 @@ bool moveTilesLeft(Board *board, Blank *blank) {
                         case 2048: blank->blank2048 += board->grid[row][col_left].value/1024;
                         break;
                         }
-                        board->grid[row][col_left].value *= 2;//±N¦X¨Ö¤§¤è¶ô­È*2
-                        board->grid[row][col].value = 0;//±N·í«e¤è¶ô­È³]¬°0
-                        board->score += board->grid[row][col_left].value;//§ó·s¤À¼Æ
+                        board->grid[row][col_left].value *= 2;//ï¿½Nï¿½Xï¿½Ö¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*2
+                        board->grid[row][col].value = 0;//ï¿½Nï¿½ï¿½ï¿½eï¿½ï¿½ï¿½ï¿½È³]ï¿½ï¿½0
+                        board->score += board->grid[row][col_left].value;//ï¿½ï¿½sï¿½ï¿½ï¿½ï¿½
                         moved = true;
                         break;
                     } 
                     else{
-                        break;//­Y»P¥ª¤è¤è¶ô¼Æ­È¤£¦P¡A«h¤¤Â_¤º¼h°j°é
+                        break;//ï¿½Yï¿½Pï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ­È¤ï¿½ï¿½Pï¿½Aï¿½hï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½hï¿½jï¿½ï¿½
                     }
                     
                 }
@@ -171,16 +171,16 @@ bool moveTilesRight(Board *board, Blank *blank) {
     int row, col, col_right;
     bool moved = false;
     for(row = 0; row < BOARD_SIZE; row++){
-        for(col = BOARD_SIZE-2; col >= 0; col--){//±q²Ä¤T¦æ¶}©l¦V¥ª³v¦CÀË¬d
+        for(col = BOARD_SIZE-2; col >= 0; col--){//ï¿½qï¿½Ä¤Tï¿½ï¿½}ï¿½lï¿½Vï¿½ï¿½ï¿½vï¿½Cï¿½Ë¬d
             if(board->grid[row][col].value != 0){
                 for(col_right = col + 1; col_right < BOARD_SIZE; col_right++){
                     if(board->grid[row][col_right].value == 0){
                         board->grid[row][col_right].value = board->grid[row][col].value;
                         board->grid[row][col].value = 0;
                         col = col_right; 
-                        moved = true;// ¦pªG¸Ó¤è¶ô¥kÃäªº¦ì¸m¬OªÅªº¡A±N¤è¶ô¦V¥k²¾°Ê
+                        moved = true;// ï¿½pï¿½Gï¿½Ó¤ï¿½ï¿½ï¿½kï¿½äªºï¿½ï¿½mï¿½Oï¿½Åªï¿½ï¿½Aï¿½Nï¿½ï¿½ï¿½ï¿½Vï¿½kï¿½ï¿½ï¿½ï¿½
                     } 
-                    else if(board->grid[row][col_right].value == board->grid[row][col].value){//¦pªG¥k¤èªº¤è¶ô¼Æ­È»P¸Ó¤è¶ô¬Û¦P
+                    else if(board->grid[row][col_right].value == board->grid[row][col].value){//ï¿½pï¿½Gï¿½kï¿½èªºï¿½ï¿½ï¿½ï¿½Æ­È»Pï¿½Ó¤ï¿½ï¿½ï¿½Û¦P
                         switch(board->grid[row][col_right].value){
                         case 2: blank->blank2 += board->grid[row][col_right].value;
                         break;
@@ -205,14 +205,14 @@ bool moveTilesRight(Board *board, Blank *blank) {
                         case 2048: blank->blank2048 += board->grid[row][col_right].value/1024;
                         break;
                         }
-                        board->grid[row][col_right].value *= 2;//±N¦X¨Ö¤§¤è¶ô­È*2
-                        board->grid[row][col].value = 0;//±N·í«e¤è¶ô­È³]¬°0
-                        board->score += board->grid[row][col_right].value;//§ó·s¤À¼Æ
+                        board->grid[row][col_right].value *= 2;//ï¿½Nï¿½Xï¿½Ö¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*2
+                        board->grid[row][col].value = 0;//ï¿½Nï¿½ï¿½ï¿½eï¿½ï¿½ï¿½ï¿½È³]ï¿½ï¿½0
+                        board->score += board->grid[row][col_right].value;//ï¿½ï¿½sï¿½ï¿½ï¿½ï¿½
                         moved = true;
                         break;
                     } 
                     else{
-                        break;//­Y»P¥k¤è¤è¶ô¼Æ­È¤£¦P¡A«h¤¤Â_¤º¼h°j°é
+                        break;//ï¿½Yï¿½Pï¿½kï¿½ï¿½ï¿½ï¿½ï¿½Æ­È¤ï¿½ï¿½Pï¿½Aï¿½hï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½hï¿½jï¿½ï¿½
                     }
                     
                 }
@@ -220,4 +220,26 @@ bool moveTilesRight(Board *board, Blank *blank) {
         }
     }
     return moved;
+}
+
+void saveScore(Board *board,int num) {
+    int highScore;
+    FILE *file = fopen("score.txt", "r+");
+    fscanf(file, "%d\n", &num);
+    if (board->score > num) {
+        printf("%d\n",num);
+        fclose(file);
+        FILE *file = fopen("score.txt", "w+");
+        highScore = board->score;
+        num = board->score;
+        fprintf(file, "%d\n", highScore); // å°‡åˆ†æ•°å¯«å…¥æ–‡ä»¶
+        fprintf(file, "%d\n", num);
+        printf("%d\n",num);
+        printf("%d\n",highScore);
+        fclose(file); // é—œé–‰æ–‡ä»¶
+    } 
+    else if(num > board->score){
+        fprintf(file, "%d", highScore);
+        fclose(file); // é—œé–‰æ–‡ä»¶
+    }
 }

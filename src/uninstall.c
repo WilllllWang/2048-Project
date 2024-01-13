@@ -46,4 +46,7 @@ void clearCount(Blank *blank){
     blank->blank512 = 0;
     blank->blank1024 = 0;
     blank->blank2048 = 0;
-}//²M°£­p¼Æ
+}//ï¿½Mï¿½ï¿½ï¿½pï¿½ï¿½
+
+
+

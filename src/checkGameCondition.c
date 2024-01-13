@@ -8,7 +8,7 @@ bool checkLoseCondition(Board *board, Condition *condition) {
                 return false;
             }
         }
-    }//檢查是否還有剩餘的空格   
+    }//嚙誼查嚙瞌嚙稻嚙誶佗蕭嚙諸餘嚙踝蕭嚙褐殷蕭   
 
     for (int row = 0; row < BOARD_SIZE; row++) {
         for (int col = 0; col < BOARD_SIZE - 1; col++) {
@@ -16,7 +16,7 @@ bool checkLoseCondition(Board *board, Condition *condition) {
                 return false; 
             }
         }
-    }//檢查相鄰的兩格是否數值相同
+    }//嚙誼查嚙諛鄰嚙踝蕭嚙踝蕭嚙瞌嚙稻嚙複值相同
     condition->gameCondition = 1;
     return true; 
 }
@@ -31,10 +31,12 @@ bool checkWinCondition(Board *board, Condition *condition) {
                 return true;
             }
         }
-    }//檢查版上是否有任一格達2048
+    }
     
     return false;
 }
+
+
 
 
     

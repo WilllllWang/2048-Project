@@ -1,8 +1,18 @@
 #include "myheader.h"
 
-void drawGame(Board *board, Blank *blank, ALLEGRO_FONT *gameFont, ALLEGRO_BITMAP  *gameBackground, ALLEGRO_DISPLAY *display, ALLEGRO_FONT *countFont) {
-    al_draw_bitmap(gameBackground, 0, 0, 0);//Ã¸»s¹CÀ¸­I´º
-    al_draw_textf(gameFont, al_map_rgb(0, 0, 0), SCREEN_WIDTH / 2, (SCREEN_HEIGHT / 2) - 330, ALLEGRO_ALIGN_CENTRE, "Score: %d", board->score);//Ã¸»s¤À¼Æ
+void drawGame(Board *board, Blank *blank, ALLEGRO_FONT *gameFont, ALLEGRO_BITMAP  *gameBackground, ALLEGRO_DISPLAY *display, ALLEGRO_FONT *countFont, int highScore, int num) {
+    FILE *file = fopen("score.txt", "r+"); // ä»¥è®€å–æ¨¡å¼æ‰“é–‹æ–‡ä»¶
+    if (file != NULL) {
+        fscanf(file, "%d\n", &highScore);
+        fscanf(file, "%d\n", &num);
+        fclose(file); // é—œé–‰æ–‡ä»¶
+    } 
+    else {
+        printf("No saved score found.\n");
+    }
+    al_draw_bitmap(gameBackground, 0, 0, 0);
+    al_draw_textf(gameFont, al_map_rgb(200, 100, 100), SCREEN_WIDTH / 2, (SCREEN_HEIGHT / 2) - 395, ALLEGRO_ALIGN_CENTRE, "Highest Score: %d", num);
+    al_draw_textf(gameFont, al_map_rgb(0, 0, 0), SCREEN_WIDTH / 2, (SCREEN_HEIGHT / 2) - 330, ALLEGRO_ALIGN_CENTRE, "Score: %d", board->score);
     al_draw_textf(countFont, al_map_rgb(0, 0, 0), SCREEN_WIDTH / 3-180, (SCREEN_HEIGHT / 2) - 500, ALLEGRO_ALIGN_CENTRE, "2: %d", blank->blank2);
     al_draw_textf(countFont, al_map_rgb(0, 0, 0), SCREEN_WIDTH / 3-50, (SCREEN_HEIGHT / 2) - 500, ALLEGRO_ALIGN_CENTRE, "4: %d", blank->blank4);
     al_draw_textf(countFont, al_map_rgb(0, 0, 0), SCREEN_WIDTH / 3+80, (SCREEN_HEIGHT / 2) - 500, ALLEGRO_ALIGN_CENTRE, "8: %d", blank->blank8);
@@ -13,13 +23,13 @@ void drawGame(Board *board, Blank *blank, ALLEGRO_FONT *gameFont, ALLEGRO_BITMAP
     al_draw_textf(countFont, al_map_rgb(0, 0, 0), SCREEN_WIDTH / 3+15, (SCREEN_HEIGHT / 2) - 450, ALLEGRO_ALIGN_CENTRE, "256: %d", blank->blank256);
     al_draw_textf(countFont, al_map_rgb(0, 0, 0), SCREEN_WIDTH / 3+145, (SCREEN_HEIGHT / 2) - 450, ALLEGRO_ALIGN_CENTRE, "512: %d", blank->blank512);
     al_draw_textf(countFont, al_map_rgb(0, 0, 0), SCREEN_WIDTH / 3+275, (SCREEN_HEIGHT / 2) - 450, ALLEGRO_ALIGN_CENTRE, "1024: %d", blank->blank1024);
-    al_draw_textf(countFont, al_map_rgb(0, 0, 0), SCREEN_WIDTH / 3+425, (SCREEN_HEIGHT / 2) - 450, ALLEGRO_ALIGN_CENTRE, "2048: %d", blank->blank2048);// Ã¸»s¼Æ¦r¤è¶ô­p¼Æ
-
+    al_draw_textf(countFont, al_map_rgb(0, 0, 0), SCREEN_WIDTH / 3+425, (SCREEN_HEIGHT / 2) - 450, ALLEGRO_ALIGN_CENTRE, "2048: %d", blank->blank2048);
+    
     for (int row = 0; row < BOARD_SIZE; ++row) {
         for (int col = 0; col < BOARD_SIZE; ++col) {
             drawTile(gameFont, board->grid[row][col].value, col*TILE_SIZE, row*TILE_SIZE);
         }
-    }//Ã¸»s4x4ªº¤è¶ôªO
+    }
     al_flip_display();
 }
 
@@ -65,11 +75,11 @@ void drawTile(ALLEGRO_FONT *gameFont, int value, int row, int col) {
         case 2048:
             color = al_map_rgb(237, 194, 46); 
             break;
-    }//Ã¸»s¤è®æ¡A¨Ã³]©w¤£¦Pªº¼Æ­È¤è®æ¦³µÛ¤£¦PªºÃC¦â­I´º
+    }//Ã¸ï¿½sï¿½ï¿½ï¿½Aï¿½Ã³]ï¿½wï¿½ï¿½ï¿½Pï¿½ï¿½ï¿½Æ­È¤ï¿½æ¦³ï¿½Û¤ï¿½ï¿½Pï¿½ï¿½ï¿½Cï¿½ï¿½Iï¿½ï¿½
 
     al_draw_filled_rectangle(row+166, col+239, row+TILE_SIZE+166, col+TILE_SIZE+239, color);
 
     if (value != 0) {
         al_draw_textf(gameFont, textColor, row+(TILE_SIZE/2)+166, col+(TILE_SIZE/2)+200, ALLEGRO_ALIGN_CENTER, "%d", value);
-    }//Ã¸»s«D¹s¼Æ­Èªº¤è¶ô
+    }//Ã¸ï¿½sï¿½Dï¿½sï¿½Æ­Èªï¿½ï¿½ï¿½ï¿½
 }

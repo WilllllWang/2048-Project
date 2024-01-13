@@ -20,7 +20,7 @@ void menu(ALLEGRO_BITMAP  *startButton,  ALLEGRO_BITMAP  *menuBackground,  ALLEG
         if ((mouseX >= startButtonValue.ButtonX && mouseX <= (startButtonValue.ButtonX+startButtonValue.ButtonWidth)) && (mouseY >= startButtonValue.ButtonY && mouseY <= (startButtonValue.ButtonY+startButtonValue.ButtonHeight))) {
             al_draw_text(font, al_map_rgb(255, 255, 255), SCREEN_WIDTH/2, startButtonValue.ButtonY+15, ALLEGRO_ALIGN_CENTER, "PLAY"); 
             mouseOnButton = true;
-        }//·í·Æ¹«¦ì©óPLAY«ö¶sªº°Ï°ì¤º®É¡A¤å¦rªºÃC¦â·|ÅÜ¦¨¥Õ¦â
+        }//ï¿½ï¿½ï¿½Æ¹ï¿½ï¿½ï¿½ï¿½PLAYï¿½ï¿½ï¿½sï¿½ï¿½ï¿½Ï°ì¤ºï¿½É¡Aï¿½ï¿½rï¿½ï¿½ï¿½Cï¿½ï¿½|ï¿½Ü¦ï¿½ï¿½Õ¦ï¿½
         else {
             al_draw_text(font, al_map_rgb(220, 110, 90), SCREEN_WIDTH/2, startButtonValue.ButtonY+15, ALLEGRO_ALIGN_CENTER, "PLAY");
             mouseOnButton = false;
@@ -82,17 +82,17 @@ void endMenu(ALLEGRO_BITMAP  *menuBackground, ALLEGRO_BITMAP  *gameBackground, A
             al_draw_text(endFont, al_map_rgb(220, 110, 90), SCREEN_WIDTH-280, quitButtonValue.ButtonY+30, ALLEGRO_ALIGN_CENTER, "QUIT");
             al_draw_text(endFont, al_map_rgb(220, 110, 90), SCREEN_WIDTH/3-35, restartButtonValue.ButtonY+35, ALLEGRO_ALIGN_CENTER, "MENU");
             mouseOnButton = false;
-        }//§PÂ_·Æ¹«¦ì¸m¦bquit©Îrestart¡A°µ¥X¬Û¹ïÀ³ªº³B²z
+        }//ï¿½Pï¿½_ï¿½Æ¹ï¿½ï¿½ï¿½mï¿½bquitï¿½ï¿½restartï¿½Aï¿½ï¿½ï¿½Xï¿½Û¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Bï¿½z
         al_flip_display();
 
         if (al_mouse_button_down(&Mstate, 1) && (mouseX >= quitButtonValue.ButtonX && mouseX <= (quitButtonValue.ButtonX+quitButtonValue.ButtonWidth)) && (mouseY >= quitButtonValue.ButtonY && mouseY <= (quitButtonValue.ButtonY + quitButtonValue.ButtonHeight))) {
             al_rest(RENDERING_SPEED);
             uninstallEnd(gameBackground, quitButton, restartButton, Mstate, display, endFont, menuFont);
-            break;//¦pªG·Æ¹«¥ªÁä«ö¤Uquit button¡A«h°h¥X¨Ã¨ø¸ü¹CÀ¸
+            break;//ï¿½pï¿½Gï¿½Æ¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Uquit buttonï¿½Aï¿½hï¿½hï¿½Xï¿½Ã¨ï¿½ï¿½ï¿½ï¿½Cï¿½ï¿½
         }
         if (al_mouse_button_down(&Mstate, 1) && (mouseX >= restartButtonValue.ButtonX && mouseX <= (restartButtonValue.ButtonX+restartButtonValue.ButtonWidth) && (mouseY >= quitButtonValue.ButtonY && mouseY <= (quitButtonValue.ButtonY + quitButtonValue.ButtonHeight)))) {
             al_rest(RENDERING_SPEED);
-            break;//¦pªG·Æ¹«¥ªÁä«ö¤Urestart button¡A«hµ¥«Ý¤@¬q®É¶¡
+            break;//ï¿½pï¿½Gï¿½Æ¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Urestart buttonï¿½Aï¿½hï¿½ï¿½ï¿½Ý¤@ï¿½qï¿½É¶ï¿½
         }
     }
 }   

@@ -32,6 +32,7 @@ int main(){
     ALLEGRO_SAMPLE *moveSound = NULL;
     ALLEGRO_SAMPLE *winSound = NULL;
     ALLEGRO_SAMPLE *loseSound = NULL;
+    FILE *file = NULL;
 
     display = al_create_display(SCREEN_WIDTH, SCREEN_HEIGHT);
     menuFont = al_load_ttf_font(MENU_FONT, 120, 0);
@@ -47,7 +48,7 @@ int main(){
     winSound = al_load_sample(WIN_SOUND_FILE);
     loseSound = al_load_sample(LOSE_SOUND_FILE); 
 
-    if (!moveSound || !winSound || !loseSound /* ÀË¬d¨ä¥L­µ®Ä */) {
+    if (!moveSound || !winSound || !loseSound /* ï¿½Ë¬dï¿½ï¿½Lï¿½ï¿½ï¿½ï¿½ */) {
         fprintf(stderr, "Failed to load audio samples.\n");
         return -1;
     }
@@ -55,7 +56,7 @@ int main(){
     Board board = {0};
     Blank blank = {0};
     Condition condition;
-    int game = 1;
+    int game = 1 ,num, highScore;
     bool moved = false;
     bool again = true;
     // Start Game
@@ -67,10 +68,10 @@ int main(){
             initializeGame(&board);
             generateNewTile(&board);
             generateNewTile(&board);
-            drawGame(&board, &blank, gameFont, gameBackground, display, countFont);
+            drawGame(&board, &blank, gameFont, gameBackground, display, countFont, highScore, num);
             game = 3; // Start game 
             while (game == 3) {
-                al_get_keyboard_state(&KBstate);//¨ú±oÁä½Lª¬ºA
+                al_get_keyboard_state(&KBstate);//ï¿½ï¿½ï¿½oï¿½ï¿½Lï¿½ï¿½ï¿½A
                 if (al_key_down(&KBstate, ALLEGRO_KEY_UP)) {
                     moved = moveTilesUp(&board, &blank);
                 } 
@@ -85,11 +86,11 @@ int main(){
                     moved = moveTilesRight(&board, &blank);
                 }
                 else if (al_key_down(&KBstate, ALLEGRO_KEY_ESCAPE)) {
-                    game = 1;//«ö¤UESCÁä¡Aµ²§ô·í«e¹CÀ¸
+                    game = 1;//ï¿½ï¿½ï¿½UESCï¿½ï¿½Aï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½eï¿½Cï¿½ï¿½
                     break;
                 }       
                 
-                drawGame(&board, &blank, gameFont, gameBackground, display, countFont);
+                drawGame(&board, &blank, gameFont, gameBackground, display, countFont, highScore, num);
 
                 if (moved) {
                     al_play_sample(moveSound, 1.0, 0.0, 1.0, ALLEGRO_PLAYMODE_ONCE, NULL);
@@ -99,6 +100,7 @@ int main(){
 
                     if (checkLoseCondition(&board, &condition)) {
                         al_play_sample(loseSound, 1.0, 0.0, 1.0, ALLEGRO_PLAYMODE_ONCE, NULL);
+                        saveScore(&board,num);
                         al_rest(RENDERING_SPEED);
                         game = 1;
                     }
