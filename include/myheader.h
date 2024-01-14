@@ -25,7 +25,7 @@
 #define END_FONT "fonts/menu_font.ttf"
 #define GAME_FONT "fonts/game_font.ttf"
 #define COUNT_FONT "fonts/game_font.ttf"
-#define BUTTON_SOUND_FILE "audio/button.wav"
+#define BUTTON_SOUND_FILE "audio/click.wav"
 #define MOVE_SOUND_FILE "audio/move_sound.wav"
 #define WIN_SOUND_FILE "audio/win_sound.wav"
 #define LOSE_SOUND_FILE "audio/lose_sound.wav"
