@@ -19,7 +19,7 @@ void menu(ALLEGRO_BITMAP  *startButton,  ALLEGRO_BITMAP  *menuBackground,  ALLEG
         if ((mouseX >= startButtonValue.ButtonX && mouseX <= (startButtonValue.ButtonX+startButtonValue.ButtonWidth)) && (mouseY >= startButtonValue.ButtonY && mouseY <= (startButtonValue.ButtonY+startButtonValue.ButtonHeight))) {
             al_draw_text(font, al_map_rgb(255, 255, 255), SCREEN_WIDTH/2, startButtonValue.ButtonY+15, ALLEGRO_ALIGN_CENTER, "PLAY"); 
             mouseOnButton = true;
-        }
+        }//���ƹ����PLAY���s���ϰ줺�ɡA��r���C��|�ܦ��զ�
         else {
             al_draw_text(font, al_map_rgb(220, 110, 90), SCREEN_WIDTH/2, startButtonValue.ButtonY+15, ALLEGRO_ALIGN_CENTER, "PLAY");
             mouseOnButton = false;
@@ -34,7 +34,7 @@ void menu(ALLEGRO_BITMAP  *startButton,  ALLEGRO_BITMAP  *menuBackground,  ALLEG
 }
 
 
-void endMenu(ALLEGRO_BITMAP  *menuBackground, ALLEGRO_BITMAP  *gameBackground, ALLEGRO_BITMAP  *quitButton,  ALLEGRO_BITMAP  *restartButton, ALLEGRO_MOUSE_STATE Mstate, ALLEGRO_DISPLAY *display, ALLEGRO_FONT *endFont, ALLEGRO_FONT *menuFont, Condition *condition) {
+void endMenu(ALLEGRO_BITMAP  *menuBackground, ALLEGRO_BITMAP  *gameBackground, ALLEGRO_BITMAP  *quitButton,  ALLEGRO_BITMAP  *restartButton, ALLEGRO_MOUSE_STATE Mstate, ALLEGRO_DISPLAY *display, ALLEGRO_FONT *endFont, ALLEGRO_FONT *menuFont, Condition *condition, Blank *blank) {
     ButtonValue restartButtonValue;
     restartButtonValue.ButtonWidth = al_get_bitmap_width(restartButton);
     restartButtonValue.ButtonHeight = al_get_bitmap_height(restartButton);
@@ -81,18 +81,17 @@ void endMenu(ALLEGRO_BITMAP  *menuBackground, ALLEGRO_BITMAP  *gameBackground, A
             al_draw_text(endFont, al_map_rgb(220, 110, 90), SCREEN_WIDTH-280, quitButtonValue.ButtonY+30, ALLEGRO_ALIGN_CENTER, "QUIT");
             al_draw_text(endFont, al_map_rgb(220, 110, 90), SCREEN_WIDTH/3-35, restartButtonValue.ButtonY+35, ALLEGRO_ALIGN_CENTER, "MENU");
             mouseOnButton = false;
-        }
+        }//�P�_�ƹ���m�bquit��restart�A���X�۹������B�z
         al_flip_display();
 
         if (al_mouse_button_down(&Mstate, 1) && (mouseX >= quitButtonValue.ButtonX && mouseX <= (quitButtonValue.ButtonX+quitButtonValue.ButtonWidth)) && (mouseY >= quitButtonValue.ButtonY && mouseY <= (quitButtonValue.ButtonY + quitButtonValue.ButtonHeight))) {
             al_rest(RENDERING_SPEED);
             uninstallEnd(gameBackground, quitButton, restartButton, Mstate, display, endFont, menuFont);
-            break;
+            break;//�p�G�ƹ�������Uquit button�A�h�h�X�è����C��
         }
         if (al_mouse_button_down(&Mstate, 1) && (mouseX >= restartButtonValue.ButtonX && mouseX <= (restartButtonValue.ButtonX+restartButtonValue.ButtonWidth) && (mouseY >= quitButtonValue.ButtonY && mouseY <= (quitButtonValue.ButtonY + quitButtonValue.ButtonHeight)))) {
             al_rest(RENDERING_SPEED);
-            break;
+            break;//�p�G�ƹ�������Urestart button�A�h���ݤ@�q�ɶ�
         }
     }
 }   
-

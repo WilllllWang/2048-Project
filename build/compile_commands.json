@@ -1,0 +1,50 @@
+[
+{
+  "directory": "C:/Users/Rita/OneDrive/Documents/GitHub/2048-Project/build",
+  "command": "C:\\llvm-mingw-20230919-msvcrt-x86_64\\bin\\clang.exe  @CMakeFiles/2048.dir/includes_C.rsp -g -o CMakeFiles\\2048.dir\\src\\checkGameCondition.c.obj -c C:\\Users\\Rita\\OneDrive\\Documents\\GitHub\\2048-Project\\src\\checkGameCondition.c",
+  "file": "C:/Users/Rita/OneDrive/Documents/GitHub/2048-Project/src/checkGameCondition.c",
+  "output": "CMakeFiles/2048.dir/src/checkGameCondition.c.obj"
+},
+{
+  "directory": "C:/Users/Rita/OneDrive/Documents/GitHub/2048-Project/build",
+  "command": "C:\\llvm-mingw-20230919-msvcrt-x86_64\\bin\\clang.exe  @CMakeFiles/2048.dir/includes_C.rsp -g -o CMakeFiles\\2048.dir\\src\\drawGame.c.obj -c C:\\Users\\Rita\\OneDrive\\Documents\\GitHub\\2048-Project\\src\\drawGame.c",
+  "file": "C:/Users/Rita/OneDrive/Documents/GitHub/2048-Project/src/drawGame.c",
+  "output": "CMakeFiles/2048.dir/src/drawGame.c.obj"
+},
+{
+  "directory": "C:/Users/Rita/OneDrive/Documents/GitHub/2048-Project/build",
+  "command": "C:\\llvm-mingw-20230919-msvcrt-x86_64\\bin\\clang.exe  @CMakeFiles/2048.dir/includes_C.rsp -g -o CMakeFiles\\2048.dir\\src\\generateNewTile.c.obj -c C:\\Users\\Rita\\OneDrive\\Documents\\GitHub\\2048-Project\\src\\generateNewTile.c",
+  "file": "C:/Users/Rita/OneDrive/Documents/GitHub/2048-Project/src/generateNewTile.c",
+  "output": "CMakeFiles/2048.dir/src/generateNewTile.c.obj"
+},
+{
+  "directory": "C:/Users/Rita/OneDrive/Documents/GitHub/2048-Project/build",
+  "command": "C:\\llvm-mingw-20230919-msvcrt-x86_64\\bin\\clang.exe  @CMakeFiles/2048.dir/includes_C.rsp -g -o CMakeFiles\\2048.dir\\src\\initializeGame.c.obj -c C:\\Users\\Rita\\OneDrive\\Documents\\GitHub\\2048-Project\\src\\initializeGame.c",
+  "file": "C:/Users/Rita/OneDrive/Documents/GitHub/2048-Project/src/initializeGame.c",
+  "output": "CMakeFiles/2048.dir/src/initializeGame.c.obj"
+},
+{
+  "directory": "C:/Users/Rita/OneDrive/Documents/GitHub/2048-Project/build",
+  "command": "C:\\llvm-mingw-20230919-msvcrt-x86_64\\bin\\clang.exe  @CMakeFiles/2048.dir/includes_C.rsp -g -o CMakeFiles\\2048.dir\\src\\main.c.obj -c C:\\Users\\Rita\\OneDrive\\Documents\\GitHub\\2048-Project\\src\\main.c",
+  "file": "C:/Users/Rita/OneDrive/Documents/GitHub/2048-Project/src/main.c",
+  "output": "CMakeFiles/2048.dir/src/main.c.obj"
+},
+{
+  "directory": "C:/Users/Rita/OneDrive/Documents/GitHub/2048-Project/build",
+  "command": "C:\\llvm-mingw-20230919-msvcrt-x86_64\\bin\\clang.exe  @CMakeFiles/2048.dir/includes_C.rsp -g -o CMakeFiles\\2048.dir\\src\\menu.c.obj -c C:\\Users\\Rita\\OneDrive\\Documents\\GitHub\\2048-Project\\src\\menu.c",
+  "file": "C:/Users/Rita/OneDrive/Documents/GitHub/2048-Project/src/menu.c",
+  "output": "CMakeFiles/2048.dir/src/menu.c.obj"
+},
+{
+  "directory": "C:/Users/Rita/OneDrive/Documents/GitHub/2048-Project/build",
+  "command": "C:\\llvm-mingw-20230919-msvcrt-x86_64\\bin\\clang.exe  @CMakeFiles/2048.dir/includes_C.rsp -g -o CMakeFiles\\2048.dir\\src\\moveTiles.c.obj -c C:\\Users\\Rita\\OneDrive\\Documents\\GitHub\\2048-Project\\src\\moveTiles.c",
+  "file": "C:/Users/Rita/OneDrive/Documents/GitHub/2048-Project/src/moveTiles.c",
+  "output": "CMakeFiles/2048.dir/src/moveTiles.c.obj"
+},
+{
+  "directory": "C:/Users/Rita/OneDrive/Documents/GitHub/2048-Project/build",
+  "command": "C:\\llvm-mingw-20230919-msvcrt-x86_64\\bin\\clang.exe  @CMakeFiles/2048.dir/includes_C.rsp -g -o CMakeFiles\\2048.dir\\src\\uninstall.c.obj -c C:\\Users\\Rita\\OneDrive\\Documents\\GitHub\\2048-Project\\src\\uninstall.c",
+  "file": "C:/Users/Rita/OneDrive/Documents/GitHub/2048-Project/src/uninstall.c",
+  "output": "CMakeFiles/2048.dir/src/uninstall.c.obj"
+}
+]
