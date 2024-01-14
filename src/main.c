@@ -51,7 +51,6 @@ int main() {
     Board board = {0};
     Condition condition;
     int game = 1;
-    int num, highScore;
     bool moved = false;
     // Start Game
     while (game == 1) {
@@ -62,7 +61,7 @@ int main() {
             initializeGame(&board, &condition);
             generateNewTile(&board);
             generateNewTile(&board);
-            drawGame(&board, gameFont, gameBackground, display, countFont, highScore, num);
+            drawGame(&board, gameFont, gameBackground, display, countFont);
             game = 3; // Start game 
             while (game == 3) {
                 al_get_keyboard_state(&KBstate);
@@ -83,7 +82,7 @@ int main() {
                     break;
                 }       
                 
-                drawGame(&board, gameFont, gameBackground, display, countFont, highScore, num);
+                drawGame(&board, gameFont, gameBackground, display, countFont);
 
                 if (moved) {
                     al_play_sample(moveSound, 1.0, 0.0, 1.0, ALLEGRO_PLAYMODE_ONCE, NULL);
@@ -93,13 +92,13 @@ int main() {
 
                     if (checkLoseCondition(&board, &condition)) {
                         al_play_sample(loseSound, 1.0, 0.0, 1.0, ALLEGRO_PLAYMODE_ONCE, NULL);
-                        saveScore(&board,num);
+                        saveScore(&board);
                         al_rest(RENDERING_SPEED);
                         game = 1;
                     }
                     else if (checkWinCondition(&board, &condition)) {
                         al_play_sample(winSound, 1.0, 0.0, 1.0, ALLEGRO_PLAYMODE_ONCE, NULL);
-                        saveScore(&board,num);
+                        saveScore(&board);
                         al_rest(RENDERING_SPEED);
                         game = 1;
                     }

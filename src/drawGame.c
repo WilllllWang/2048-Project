@@ -1,13 +1,13 @@
 #include "myheader.h"
 
-void drawGame(Board *board, ALLEGRO_FONT *gameFont, ALLEGRO_BITMAP  *gameBackground, ALLEGRO_DISPLAY *display, ALLEGRO_FONT *countFont, int highScore, int num) {
+void drawGame(Board *board, ALLEGRO_FONT *gameFont, ALLEGRO_BITMAP  *gameBackground, ALLEGRO_DISPLAY *display, ALLEGRO_FONT *countFont) {
+    int highScore;
     FILE *file = fopen("score.txt", "r+"); 
     fscanf(file, "%d\n", &highScore);
-    fscanf(file, "%d\n", &num);
     fclose(file); 
     
     al_draw_bitmap(gameBackground, 0, 0, 0);
-    al_draw_textf(gameFont, al_map_rgb(200, 100, 100), SCREEN_WIDTH / 2, (SCREEN_HEIGHT / 2) - 395, ALLEGRO_ALIGN_CENTRE, "Highest Score: %d", num);
+    al_draw_textf(gameFont, al_map_rgb(200, 100, 100), SCREEN_WIDTH / 2, (SCREEN_HEIGHT / 2) - 395, ALLEGRO_ALIGN_CENTRE, "Highest Score: %d", highScore);
     al_draw_textf(gameFont, al_map_rgb(0, 0, 0), SCREEN_WIDTH / 2, (SCREEN_HEIGHT / 2) - 330, ALLEGRO_ALIGN_CENTRE, "Score: %d", board->score);
     
     for (int row = 0; row < BOARD_SIZE; ++row) {

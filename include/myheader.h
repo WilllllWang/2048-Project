@@ -46,7 +46,6 @@ typedef struct {
     int ButtonY;
 } ButtonValue;
 
-
 typedef struct {
     int gameCondition;
 } Condition;
@@ -54,7 +53,7 @@ typedef struct {
 
 void menu(ALLEGRO_BITMAP  *startButton,  ALLEGRO_BITMAP  *menuBackground, ALLEGRO_MOUSE_STATE Mstate, ALLEGRO_DISPLAY *display, ALLEGRO_FONT *font);
 void endMenu(ALLEGRO_BITMAP  *menuBackground, ALLEGRO_BITMAP  *gameBackground, ALLEGRO_BITMAP  *quitButton,  ALLEGRO_BITMAP  *restartButton, ALLEGRO_MOUSE_STATE Mstate, ALLEGRO_DISPLAY *display, ALLEGRO_FONT *endFont, ALLEGRO_FONT *menuFont, Condition *condition);
-void drawGame(Board *board, ALLEGRO_FONT *gameFont, ALLEGRO_BITMAP  *gameBackground, ALLEGRO_DISPLAY *display, ALLEGRO_FONT *countFont, int highScore, int num);
+void drawGame(Board *board, ALLEGRO_FONT *gameFont, ALLEGRO_BITMAP  *gameBackground, ALLEGRO_DISPLAY *display, ALLEGRO_FONT *countFont);
 void drawTile(ALLEGRO_FONT *gameFont, int value, int row, int col);
 void generateNewTile(Board *board);
 void initializeGame(Board *board, Condition *condition);
@@ -62,8 +61,7 @@ void uninstallMenu(ALLEGRO_BITMAP  *menuBackground, ALLEGRO_BITMAP  *startButton
 void uninstallEnd(ALLEGRO_BITMAP  *gameBackground, ALLEGRO_BITMAP  *quitButton, ALLEGRO_BITMAP  *restartButton, ALLEGRO_MOUSE_STATE Mstate, ALLEGRO_DISPLAY *display, ALLEGRO_FONT *endFont, ALLEGRO_FONT *menuFont);
 void uninstallMusic(ALLEGRO_SAMPLE *buttonSound,ALLEGRO_SAMPLE *moveSound,ALLEGRO_SAMPLE *winSound,ALLEGRO_SAMPLE *loseSound);
 void uninstallGame(ALLEGRO_BITMAP  *gameBackground, ALLEGRO_DISPLAY *display, ALLEGRO_FONT *gameFont);
-void saveScore(Board *board, int num);
-//void getScore(Board *board, int num, int highScore );
+void saveScore(Board *board);
 bool boardFull(Board *board);
 bool moveTilesUp(Board *board);
 bool moveTilesDown(Board *board);

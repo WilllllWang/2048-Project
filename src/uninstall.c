@@ -25,8 +25,8 @@ void uninstallEnd(ALLEGRO_BITMAP  *gameBackground, ALLEGRO_BITMAP  *quitButton, 
     al_destroy_font(endFont);
     al_destroy_font(menuFont);
     al_uninstall_mouse();
-
 }
+
 
 void uninstallMusic(ALLEGRO_SAMPLE *buttonSound,ALLEGRO_SAMPLE *moveSound,ALLEGRO_SAMPLE *winSound,ALLEGRO_SAMPLE *loseSound){
     al_destroy_sample(buttonSound);

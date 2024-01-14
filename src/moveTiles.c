@@ -126,24 +126,20 @@ bool moveTilesRight(Board *board) {
     return moved;
 }
 
-void saveScore(Board *board, int num) {
+
+void saveScore(Board *board) {
     int highScore;
     FILE *file = fopen("score.txt", "r+");
-    fscanf(file, "%d\n", &num);
+    fscanf(file, "%d\n", &highScore);
     
-    if (board->score > num) {
-        printf("%d\n",num);
+    if (board->score > highScore) {
         fclose(file);
         FILE *file = fopen("score.txt", "w+");
         highScore = board->score;
-        num = board->score;
         fprintf(file, "%d\n", highScore); 
-        fprintf(file, "%d\n", num);
-        printf("%d\n",num);
-        printf("%d\n",highScore);
         fclose(file); 
     } 
-    else if(num > board->score) {
+    else {
         fprintf(file, "%d", highScore);
         fclose(file); 
     }
