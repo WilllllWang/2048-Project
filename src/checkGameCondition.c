@@ -8,7 +8,7 @@ bool checkLoseCondition(Board *board, Condition *condition) {
                 return false;
             }
         }
-    }//�ˬd�O�_�٦��Ѿl���Ů�   
+    } 
 
     for (int row = 0; row < BOARD_SIZE; row++) {
         for (int col = 0; col < BOARD_SIZE - 1; col++) {
@@ -16,7 +16,7 @@ bool checkLoseCondition(Board *board, Condition *condition) {
                 return false; 
             }
         }
-    }//�ˬd�۾F�����O�_�ƭȬۦP
+    }
     condition->gameCondition = 1;
     return true; 
 }

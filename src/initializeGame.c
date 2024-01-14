@@ -9,5 +9,5 @@ void initializeGame(Board *board, Condition *condition) {
         for (col = 0; col < BOARD_SIZE; col++) {
             board->grid[row][col].value = 0;
         }
-    }//�N�O�W16�Ӥ�����ƭȪ�l�Ƭ�0
+    }
 }

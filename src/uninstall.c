@@ -34,19 +34,6 @@ void uninstallMusic(ALLEGRO_SAMPLE *moveSound,ALLEGRO_SAMPLE *winSound,ALLEGRO_S
     al_destroy_sample(loseSound);
 };
 
-void clearCount(Blank *blank){
-    blank->blank2 = 0;
-    blank->blank4 = 0;
-    blank->blank8 = 0;
-    blank->blank16 = 0;
-    blank->blank32 = 0;
-    blank->blank64 = 0;
-    blank->blank128 = 0;
-    blank->blank256 = 0;
-    blank->blank512 = 0;
-    blank->blank1024 = 0;
-    blank->blank2048 = 0;
-}//�M���p��
 
 
 

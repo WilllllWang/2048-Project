@@ -5,7 +5,7 @@
 #include "myheader.h"
 
 
-int main(){
+int main() {
     al_init();
     al_init_primitives_addon();
     al_init_image_addon();
@@ -48,15 +48,10 @@ int main(){
     winSound = al_load_sample(WIN_SOUND_FILE);
     loseSound = al_load_sample(LOSE_SOUND_FILE); 
 
-    if (!moveSound || !winSound || !loseSound /* �ˬd��L���� */) {
-        fprintf(stderr, "Failed to load audio samples.\n");
-        return -1;
-    }
-
     Board board = {0};
-    Blank blank = {0};
     Condition condition;
-    int game = 1 ,num, highScore;
+    int game = 1;
+    int num, highScore;
     bool moved = false;
     // Start Game
     while (game == 1) {
@@ -67,28 +62,28 @@ int main(){
             initializeGame(&board, &condition);
             generateNewTile(&board);
             generateNewTile(&board);
-            drawGame(&board, &blank, gameFont, gameBackground, display, countFont, highScore, num);
+            drawGame(&board, gameFont, gameBackground, display, countFont, highScore, num);
             game = 3; // Start game 
             while (game == 3) {
-                al_get_keyboard_state(&KBstate);//���o��L���A
+                al_get_keyboard_state(&KBstate);
                 if (al_key_down(&KBstate, ALLEGRO_KEY_UP)) {
-                    moved = moveTilesUp(&board, &blank);
+                    moved = moveTilesUp(&board);
                 } 
                 else if (al_key_down(&KBstate, ALLEGRO_KEY_DOWN)) {
-                    moved = moveTilesDown(&board, &blank);
+                    moved = moveTilesDown(&board);
                 }
                 else if (al_key_down(&KBstate, ALLEGRO_KEY_LEFT)) {
-                    moved = moveTilesLeft(&board, &blank);
+                    moved = moveTilesLeft(&board);
                 }
                 else if (al_key_down(&KBstate, ALLEGRO_KEY_RIGHT)) {
-                    moved = moveTilesRight(&board, &blank);
+                    moved = moveTilesRight(&board);
                 }
                 else if (al_key_down(&KBstate, ALLEGRO_KEY_ESCAPE)) {
-                    game = 1;//���UESC��A�������e�C��
+                    game = 1;
                     break;
                 }       
                 
-                drawGame(&board, &blank, gameFont, gameBackground, display, countFont, highScore, num);
+                drawGame(&board, gameFont, gameBackground, display, countFont, highScore, num);
 
                 if (moved) {
                     al_play_sample(moveSound, 1.0, 0.0, 1.0, ALLEGRO_PLAYMODE_ONCE, NULL);
@@ -107,11 +102,11 @@ int main(){
                         saveScore(&board,num);
                         al_rest(RENDERING_SPEED);
                         game = 1;
+                    }
                 }
                 al_rest(RENDERING_SPEED);
             }
         }
-        endMenu( menuBackground, gameBackground, quitButton, restartButton, Mstate, display, endFont, menuFont, &condition, &blank);
-        clearCount(&blank);
+        endMenu(menuBackground, gameBackground, quitButton, restartButton, Mstate, display, endFont, menuFont, &condition);
     }
 }
