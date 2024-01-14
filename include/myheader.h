@@ -25,6 +25,7 @@
 #define END_FONT "fonts/menu_font.ttf"
 #define GAME_FONT "fonts/game_font.ttf"
 #define COUNT_FONT "fonts/game_font.ttf"
+#define BUTTON_SOUND_FILE "audio/button.wav"
 #define MOVE_SOUND_FILE "audio/move_sound.wav"
 #define WIN_SOUND_FILE "audio/win_sound.wav"
 #define LOSE_SOUND_FILE "audio/lose_sound.wav"
@@ -59,7 +60,7 @@ void generateNewTile(Board *board);
 void initializeGame(Board *board, Condition *condition);
 void uninstallMenu(ALLEGRO_BITMAP  *menuBackground, ALLEGRO_BITMAP  *startButton, ALLEGRO_FONT *font);
 void uninstallEnd(ALLEGRO_BITMAP  *gameBackground, ALLEGRO_BITMAP  *quitButton, ALLEGRO_BITMAP  *restartButton, ALLEGRO_MOUSE_STATE Mstate, ALLEGRO_DISPLAY *display, ALLEGRO_FONT *endFont, ALLEGRO_FONT *menuFont);
-void uninstallMusic(ALLEGRO_SAMPLE *moveSound,ALLEGRO_SAMPLE *winSound,ALLEGRO_SAMPLE *loseSound);
+void uninstallMusic(ALLEGRO_SAMPLE *buttonSound,ALLEGRO_SAMPLE *moveSound,ALLEGRO_SAMPLE *winSound,ALLEGRO_SAMPLE *loseSound);
 void uninstallGame(ALLEGRO_BITMAP  *gameBackground, ALLEGRO_DISPLAY *display, ALLEGRO_FONT *gameFont);
 void saveScore(Board *board, int num);
 //void getScore(Board *board, int num, int highScore );

@@ -28,7 +28,8 @@ void uninstallEnd(ALLEGRO_BITMAP  *gameBackground, ALLEGRO_BITMAP  *quitButton, 
 
 }
 
-void uninstallMusic(ALLEGRO_SAMPLE *moveSound,ALLEGRO_SAMPLE *winSound,ALLEGRO_SAMPLE *loseSound){
+void uninstallMusic(ALLEGRO_SAMPLE *buttonSound,ALLEGRO_SAMPLE *moveSound,ALLEGRO_SAMPLE *winSound,ALLEGRO_SAMPLE *loseSound){
+    al_destroy_sample(buttonSound);
     al_destroy_sample(moveSound);
     al_destroy_sample(winSound);
     al_destroy_sample(loseSound);

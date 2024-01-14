@@ -2,6 +2,8 @@
 
 void menu(ALLEGRO_BITMAP  *startButton,  ALLEGRO_BITMAP  *menuBackground,  ALLEGRO_MOUSE_STATE Mstate, ALLEGRO_DISPLAY *display, ALLEGRO_FONT *font) {
     ButtonValue startButtonValue;
+    ALLEGRO_SAMPLE *buttonSound = NULL;
+    buttonSound = al_load_sample(BUTTON_SOUND_FILE);
     startButtonValue.ButtonWidth = al_get_bitmap_width(startButton);
     startButtonValue.ButtonHeight = al_get_bitmap_height(startButton);
     startButtonValue.ButtonX = (SCREEN_WIDTH - startButtonValue.ButtonWidth) / 2;
@@ -27,6 +29,7 @@ void menu(ALLEGRO_BITMAP  *startButton,  ALLEGRO_BITMAP  *menuBackground,  ALLEG
         al_flip_display();  
 
         if (al_mouse_button_down(&Mstate, 1) && mouseOnButton) {
+            al_play_sample(buttonSound, 1.0, 0.0, 1.0, ALLEGRO_PLAYMODE_ONCE, NULL);
             al_rest(RENDERING_SPEED);
             break;
         }
@@ -36,6 +39,8 @@ void menu(ALLEGRO_BITMAP  *startButton,  ALLEGRO_BITMAP  *menuBackground,  ALLEG
 
 void endMenu(ALLEGRO_BITMAP  *menuBackground, ALLEGRO_BITMAP  *gameBackground, ALLEGRO_BITMAP  *quitButton,  ALLEGRO_BITMAP  *restartButton, ALLEGRO_MOUSE_STATE Mstate, ALLEGRO_DISPLAY *display, ALLEGRO_FONT *endFont, ALLEGRO_FONT *menuFont, Condition *condition) {
     ButtonValue restartButtonValue;
+    ALLEGRO_SAMPLE *buttonSound = NULL;
+    buttonSound = al_load_sample(BUTTON_SOUND_FILE);
     restartButtonValue.ButtonWidth = al_get_bitmap_width(restartButton);
     restartButtonValue.ButtonHeight = al_get_bitmap_height(restartButton);
     restartButtonValue.ButtonX = (SCREEN_WIDTH - restartButtonValue.ButtonWidth-400) / 2;
@@ -85,11 +90,13 @@ void endMenu(ALLEGRO_BITMAP  *menuBackground, ALLEGRO_BITMAP  *gameBackground, A
         al_flip_display();
 
         if (al_mouse_button_down(&Mstate, 1) && (mouseX >= quitButtonValue.ButtonX && mouseX <= (quitButtonValue.ButtonX+quitButtonValue.ButtonWidth)) && (mouseY >= quitButtonValue.ButtonY && mouseY <= (quitButtonValue.ButtonY + quitButtonValue.ButtonHeight))) {
+            al_play_sample(buttonSound, 1.0, 0.0, 1.0, ALLEGRO_PLAYMODE_ONCE, NULL);
             al_rest(RENDERING_SPEED);
             uninstallEnd(gameBackground, quitButton, restartButton, Mstate, display, endFont, menuFont);
             break;
         }
         if (al_mouse_button_down(&Mstate, 1) && (mouseX >= restartButtonValue.ButtonX && mouseX <= (restartButtonValue.ButtonX+restartButtonValue.ButtonWidth) && (mouseY >= quitButtonValue.ButtonY && mouseY <= (quitButtonValue.ButtonY + quitButtonValue.ButtonHeight)))) {
+            al_play_sample(buttonSound, 1.0, 0.0, 1.0, ALLEGRO_PLAYMODE_ONCE, NULL);
             al_rest(RENDERING_SPEED);
             break;
         }
