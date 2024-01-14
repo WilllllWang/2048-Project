@@ -58,14 +58,13 @@ int main(){
     Condition condition;
     int game = 1 ,num, highScore;
     bool moved = false;
-    bool again = true;
     // Start Game
     while (game == 1) {
-        menu(startButton, menuBackground, Mstate, display, menuFont, &condition);
+        menu(startButton, menuBackground, Mstate, display, menuFont);
         srand(time(NULL));
         game = 2; // Initialize game 
         while (game == 2) {
-            initializeGame(&board);
+            initializeGame(&board, &condition);
             generateNewTile(&board);
             generateNewTile(&board);
             drawGame(&board, &blank, gameFont, gameBackground, display, countFont, highScore, num);
@@ -77,7 +76,6 @@ int main(){
                 } 
                 else if (al_key_down(&KBstate, ALLEGRO_KEY_DOWN)) {
                     moved = moveTilesDown(&board, &blank);
-
                 }
                 else if (al_key_down(&KBstate, ALLEGRO_KEY_LEFT)) {
                     moved = moveTilesLeft(&board, &blank);
@@ -106,9 +104,9 @@ int main(){
                     }
                     else if (checkWinCondition(&board, &condition)) {
                         al_play_sample(winSound, 1.0, 0.0, 1.0, ALLEGRO_PLAYMODE_ONCE, NULL);
+                        saveScore(&board,num);
                         al_rest(RENDERING_SPEED);
                         game = 1;
-                    }
                 }
                 al_rest(RENDERING_SPEED);
             }

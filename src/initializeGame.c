@@ -1,11 +1,13 @@
 #include "myheader.h"
 
-void initializeGame(Board *board) {
-    board->score = 0;//ªì©l¤Æ¤À¼Æ¬°0
+void initializeGame(Board *board, Condition *condition) {
+    board->score = 0;
+    condition->gameCondition = 0;
+  
     int row, col;
     for (row = 0; row < BOARD_SIZE; row++) {
         for (col = 0; col < BOARD_SIZE; col++) {
             board->grid[row][col].value = 0;
         }
-    }//±NªO¤W16­Ó¤è¶ôªº¼Æ­Èªì©l¤Æ¬°0
+    }//ï¿½Nï¿½Oï¿½W16ï¿½Ó¤ï¿½ï¿½ï¿½ï¿½ï¿½Æ­Èªï¿½lï¿½Æ¬ï¿½0
 }

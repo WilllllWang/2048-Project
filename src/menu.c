@@ -1,13 +1,12 @@
 #include "myheader.h"
 
-void menu(ALLEGRO_BITMAP  *startButton,  ALLEGRO_BITMAP  *menuBackground,  ALLEGRO_MOUSE_STATE Mstate, ALLEGRO_DISPLAY *display, ALLEGRO_FONT *font, Condition *condition) {
+void menu(ALLEGRO_BITMAP  *startButton,  ALLEGRO_BITMAP  *menuBackground,  ALLEGRO_MOUSE_STATE Mstate, ALLEGRO_DISPLAY *display, ALLEGRO_FONT *font) {
     ButtonValue startButtonValue;
     startButtonValue.ButtonWidth = al_get_bitmap_width(startButton);
     startButtonValue.ButtonHeight = al_get_bitmap_height(startButton);
     startButtonValue.ButtonX = (SCREEN_WIDTH - startButtonValue.ButtonWidth) / 2;
     startButtonValue.ButtonY = (SCREEN_HEIGHT - startButtonValue.ButtonHeight) / 2;
     bool mouseOnButton = false;
-    condition->gameCondition = 0;
 
     while (1) {
         float mouseX = al_get_mouse_state_axis(&Mstate, 0);

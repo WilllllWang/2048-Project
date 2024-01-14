@@ -59,10 +59,10 @@ typedef struct {
     int ButtonY;
 } ButtonValue;
 
+
 typedef struct {
     int gameCondition;
 } Condition;
-
 
 
 void menu(ALLEGRO_BITMAP  *startButton,  ALLEGRO_BITMAP  *menuBackground, ALLEGRO_MOUSE_STATE Mstate, ALLEGRO_DISPLAY *display, ALLEGRO_FONT *font, Condition *condition);
@@ -70,7 +70,7 @@ void endMenu(ALLEGRO_BITMAP  *menuBackground, ALLEGRO_BITMAP  *gameBackground, A
 void drawGame(Board *board, Blank *blank, ALLEGRO_FONT *gameFont, ALLEGRO_BITMAP  *gameBackground, ALLEGRO_DISPLAY *display, ALLEGRO_FONT *countFont, int highScore, int num);
 void drawTile(ALLEGRO_FONT *gameFont, int value, int row, int col);
 void generateNewTile(Board *board);
-void initializeGame(Board *board);
+void initializeGame(Board *board, Condition *condition);
 void uninstallMenu(ALLEGRO_BITMAP  *menuBackground, ALLEGRO_BITMAP  *startButton, ALLEGRO_FONT *font);
 void uninstallEnd(ALLEGRO_BITMAP  *gameBackground, ALLEGRO_BITMAP  *quitButton, ALLEGRO_BITMAP  *restartButton, ALLEGRO_MOUSE_STATE Mstate, ALLEGRO_DISPLAY *display, ALLEGRO_FONT *endFont, ALLEGRO_FONT *menuFont);
 void uninstallMusic(ALLEGRO_SAMPLE *moveSound,ALLEGRO_SAMPLE *winSound,ALLEGRO_SAMPLE *loseSound);
